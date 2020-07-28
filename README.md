@@ -44,10 +44,33 @@ Benchmark
 
 ## Android AAPT Compile config
 
+libs:
+
+```
+"libandroidfw",
+"libutils",
+"liblog",
+"libcutils",
+"libexpat",
+"libziparchive",
+"libpng",
+"libbase",
+"libprotobuf-cpp-lite",
+"libz",
+"libbuildversion",
+```
+
 ```
 FIND_PACKAGE(PNG REQUIRED)
 INCLUDE_DIRECTORIES(${PNG_INCLUDE_DIRS})
 LINK_DIRECTORIES(${PNG_LIBRARY_DIRS})
 ADD_DEFINITIONS(${PNG_DEFINITIONS})
+```
+
+Others
+
+```
+INCLUDE_DIRECTORIES(~/frameworks/base/libs/androidfw/include)
+LINK_DIRECTORIES(~/frameworks/base/libs/androidfw)
 ```
 
