@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 image="0.23.8"
+num-complex = "0.3"
 
 [lib]
 path="src/lib.rs"

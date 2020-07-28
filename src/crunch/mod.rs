@@ -10,6 +10,7 @@ mod tests {
     #[test]
     fn should_enable_read_file() {
         let buf = PathBuf::from("_fixtures/drawable/image.png");
-        Png::read(buf);
+        let png = Png::read(buf);
+        png.to_image(String::from("output.png"));
     }
 }
