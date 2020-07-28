@@ -28,10 +28,17 @@ Documents:
 
  - [优化包大小-PNG部分](https://juejin.im/post/5de77f37e51d45583317d73a)
  - [关于Android图片资源瘦身的奇思妙想](https://cloud.tencent.com/developer/article/1004331) 演示：Pngout
+ - [pngquant with rust](https://pngquant.org/install.html)
 
 Rust Library:
 
+ - [Citrus](https://gitlab.com/citrus-rs/citrus)  is a tool that helps convert C programs to Rust programs. It transforms C syntax to Rust syntax, but ignores C semantics.
+ - [LodePNG](https://github.com/kornelski/lodepng-rust)  is a pure Rust PNG image decoder and encoder. Allows easy reading and writing of PNG files without any system dependencies.
  - [Oxipng](https://github.com/shssoichiro/oxipng) is a multithreaded lossless PNG compression optimizer. It can be used via a command-line interface or as a library in other Rust programs.
+ 
+Benchmark
+
+ - [RGBA Structural Similarity](https://github.com/kornelski/dssim)  Image similarity comparison simulating human perception (multiscale SSIM in Rust) 
  
 9Patch -> NinePatch -> 九宫格
 
