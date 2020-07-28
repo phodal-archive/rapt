@@ -1,6 +1,28 @@
 use std::path::{PathBuf};
 use image::GenericImageView;
 
+pub enum ColorType {
+    PNG_COLOR_TYPE_GRAY,
+    PNG_COLOR_TYPE_GRAY_ALPHA,
+    PNG_COLOR_TYPE_PALETTE,
+    PNG_COLOR_TYPE_RGB,
+    PNG_COLOR_TYPE_RGB_ALPHA,
+    PNG_COLOR_MASK_PALETTE,
+    PNG_COLOR_MASK_COLOR,
+    PNG_COLOR_MASK_ALPHA,
+}
+
+pub enum FilterMethod {
+    PNG_FILTER_TYPE_BASE,
+    PNG_INTRAPIXEL_DIFFERENCING
+}
+
+pub enum InterlaceMethod {
+    PNG_INTERLACE_NONE,
+    PNG_INTERLACE_ADAM7
+}
+
+#[derive(Debug, Clone)]
 pub struct Png {
     width: u32,
     height: u32,
