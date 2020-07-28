@@ -15,12 +15,23 @@ Android Libs:
  - pngout
  
 算法：
+
+ - [pngquant](https://pngquant.org/) 是一个命令行工具和一个用于有损压缩PNG图像的库。 转换显着减少文件大小（通常高达70％），并保留完整的alpha透明度。 
+ - Zopfli 是一个数据压缩算法，可以将数据压缩为 DEFLATE、gzip 或 zli b格式。Zopfli 被认为是当前压缩率最高的 DEFLATE 压缩算法。
  
-  - Zopfli 是一个数据压缩算法，可以将数据压缩为 DEFLATE、gzip 或 zli b格式。Zopfli 被认为是当前压缩率最高的 DEFLATE 压缩算法。
+PNG 压缩算法：
+
+ - [Color quantization](https://en.wikipedia.org/wiki/Color_quantization)
+ - [Indexed color](https://en.wikipedia.org/wiki/Indexed_color) 
  
 Documents:
 
+ - [优化包大小-PNG部分](https://juejin.im/post/5de77f37e51d45583317d73a)
  - [关于Android图片资源瘦身的奇思妙想](https://cloud.tencent.com/developer/article/1004331) 演示：Pngout
+
+Rust Library:
+
+ - [Oxipng](https://github.com/shssoichiro/oxipng) is a multithreaded lossless PNG compression optimizer. It can be used via a command-line interface or as a library in other Rust programs.
  
 9Patch -> NinePatch -> 九宫格
 
