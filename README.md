@@ -106,17 +106,79 @@ libs:
 "libbuildversion",
 ```
 
-```
-FIND_PACKAGE(PNG REQUIRED)
-INCLUDE_DIRECTORIES(${PNG_INCLUDE_DIRS})
-LINK_DIRECTORIES(${PNG_LIBRARY_DIRS})
-ADD_DEFINITIONS(${PNG_DEFINITIONS})
-```
-
-Others
+### Compiler
 
 ```
+
+FIND_PACKAGE(JAVA REQUIRED)
+INCLUDE_DIRECTORIES(${JAVA_INCLUDE_DIRS})
+LINK_DIRECTORIES(${JAVA_LIBRARY_DIRS})
+
+#FIND_PACKAGE(JNI REQUIRED)
+#INCLUDE(UseJava)
+
+INCLUDE_DIRECTORIES(~/studio-master-dev/prebuilts/studio/jdk/mac/Contents/Home/include/darwin)
+INCLUDE_DIRECTORIES(~/studio-master-dev/prebuilts/studio/jdk/mac/Contents/Home/include)
+LINK_DIRECTORIES(~/studio-master-dev/prebuilts/studio/jdk/mac/Contents/Home)
+
+INCLUDE_DIRECTORIES(~/studio-master-dev/external/libpng/include)
+LINK_DIRECTORIES(~/studio-master-dev/external/libpng)
+
 INCLUDE_DIRECTORIES(~/frameworks/base/libs/androidfw/include)
 LINK_DIRECTORIES(~/frameworks/base/libs/androidfw)
+
+INCLUDE_DIRECTORIES(~/system/core/include)
+LINK_DIRECTORIES(~/frameworks/base/libs)
+
+INCLUDE_DIRECTORIES(~/system/libbase/include)
+LINK_DIRECTORIES(~/system/libbase)
+
+INCLUDE_DIRECTORIES(~/studio-master-dev/external/googletest/googlemock/include)
+LINK_DIRECTORIES(~/studio-master-dev/external/googlemock)
+
+INCLUDE_DIRECTORIES(~/studio-master-dev/external/googletest/googletest/include)
+LINK_DIRECTORIES(~/studio-master-dev/external/googletest)
+
+INCLUDE_DIRECTORIES(~/frameworks/native/include)
+LINK_DIRECTORIES(~/frameworks/native)
+
+INCLUDE_DIRECTORIES(~/system/libziparchive/include)
+LINK_DIRECTORIES(~/system/libziparchive)
+
+FIND_PACKAGE(PROTOBUF REQUIRED)
+INCLUDE_DIRECTORIES(${PROTOBUF_INCLUDE_DIRS})
+LINK_DIRECTORIES(${PROTOBUF_LIBRARY_DIRS})
+ADD_DEFINITIONS(${PROTOBUF_DEFINITIONS})
 ```
 
+add `build/version.h`
+
+```c++
+#ifndef BUILD_VERSION_H
+#define BUILD_VERSION_H
+
+#include <string>
+
+namespace android {
+namespace build {
+
+std::string GetBuildNumber();
+
+} // namespace build
+} // namespace android
+
+#endif  // BUILD_VERSION_H
+```
+
+## Development
+
+### Proto
+
+```
+brew cask install protobuf
+```
+
+
+```bash
+cargo install protobuf-codegen
+```
