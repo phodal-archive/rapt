@@ -172,9 +172,28 @@ std::string GetBuildNumber();
 
 ### Compilable
 
+[MacOS X 编译Android源码](https://juejin.im/post/5b690cb46fb9a04fd044885d)
+
 [https://android.googlesource.com/platform/build/soong/](https://android.googlesource.com/platform/build/soong/)
 
-Install Soong: [[AOSP] macOS Mojave 10.14（18A391）编译AOSP（Android 8.1.0）](https://www.jianshu.com/p/1fba826c710e)
+[Android 镜像使用帮助](https://mirror.tuna.tsinghua.edu.cn/help/AOSP/)
+
+```
+mkdir ~/bin
+PATH=~/bin:$PATH
+curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+chmod a+x ~/bin/repo
+```
+
+```
+wget -c https://mirrors.tuna.tsinghua.edu.cn/aosp-monthly/aosp-latest.tar # 下载初始化包
+tar xf aosp-latest.tar
+cd AOSP   # 解压得到的 AOSP 工程目录
+# 这时 ls 的话什么也看不到，因为只有一个隐藏的 .repo 目录
+repo sync # 正常同步一遍即可得到完整目录
+# 或 repo sync -l 仅checkout代码
+```
+
 
 ## Development
 
