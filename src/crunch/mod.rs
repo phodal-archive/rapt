@@ -1,7 +1,5 @@
 pub mod png;
 pub mod png_crunch;
-pub mod compile;
-
 
 #[cfg(test)]
 mod tests {
