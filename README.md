@@ -106,7 +106,7 @@ libs:
 "libbuildversion",
 ```
 
-### Compiler
+### Readable
 
 ```
 
@@ -169,6 +169,12 @@ std::string GetBuildNumber();
 
 #endif  // BUILD_VERSION_H
 ```
+
+### Compilable
+
+[https://android.googlesource.com/platform/build/soong/](https://android.googlesource.com/platform/build/soong/)
+
+Install Soong: [[AOSP] macOS Mojave 10.14（18A391）编译AOSP（Android 8.1.0）](https://www.jianshu.com/p/1fba826c710e)
 
 ## Development
 
