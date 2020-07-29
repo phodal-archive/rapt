@@ -194,6 +194,35 @@ repo sync # 正常同步一遍即可得到完整目录
 # 或 repo sync -l 仅checkout代码
 ```
 
+#### Mount
+
+[Establishing a Build Environment](https://source.android.com/setup/build/initializing)
+
+resize:
+
+```bash
+hdiutil resize -size <new-size-you-want>g ~/android.dmg.sparseimage
+```
+
+mount 
+
+```bash
+hdiutil attach ~/android.dmg -mountpoint /Volumes/android;
+```
+
+unmount
+
+```bash
+hdiutil detach /Volumes/android;
+```
+
+
+bash 
+
+```bash
+mountAndroid() { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
+umountAndroid() { hdiutil detach /Volumes/android; }
+```
 
 ## Development
 
