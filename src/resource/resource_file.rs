@@ -1,43 +1,6 @@
+use crate::resource::config_description::ConfigDescription;
 use crate::resource::source::Source;
-
-#[derive(Clone, Debug)]
-pub enum ResourceType {
-    kAnim,
-    kAnimator,
-    kArray,
-    kAttr,
-    kAttrPrivate,
-    kBool,
-    kColor,
-
-    // Not really a type, but it shows up in some CTS tests and
-    // we need to continue respecting it.
-    kConfigVarying,
-
-    kDimen,
-    kDrawable,
-    kFont,
-    kFraction,
-    kId,
-    kInteger,
-    kInterpolator,
-    kLayout,
-    kMenu,
-    kMipmap,
-    kNavigation,
-    kPlurals,
-    kRaw,
-    kString,
-    kStyle,
-    kStyleable,
-    kTransition,
-
-    // Not a parsed type. It is only used when loading resource tables that may have modified type
-    // names
-    kUnknown,
-
-    kXml,
-}
+use crate::resource::ResourceType;
 
 #[derive(Clone, Debug)]
 pub struct ResourceName {
@@ -65,5 +28,6 @@ pub struct ResourceFile {
     name: ResourceName,
     typ: ResourceFileType,
     source: Source,
+    config: ConfigDescription,
     exported_symbols: Vec<SourcedResourceName>,
 }
