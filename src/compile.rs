@@ -9,7 +9,7 @@ impl Compile {
     pub fn compile_png() {}
     // values
     pub fn compile_table() {}
-    pub fn compile_file(path_data: ResourcePathData) {
+    pub fn compile_file(path_data: ResourcePathData, output_path: String) {
         let mut res_file = ResourceFile::new();
         let resource_type = parse_resource_type(path_data.resource_dir);
         res_file.name = ResourceName::new(resource_type);

@@ -2,6 +2,7 @@ extern crate image;
 
 pub mod compile;
 pub mod crunch;
+pub mod format;
 pub mod proto;
 pub mod resource;
 
