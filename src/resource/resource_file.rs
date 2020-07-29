@@ -9,6 +9,16 @@ pub struct ResourceName {
     entry: String,
 }
 
+impl ResourceName {
+    pub fn new(resource_type: ResourceType) -> ResourceName {
+        ResourceName {
+            package: "".to_string(),
+            typ: resource_type,
+            entry: "".to_string(),
+        }
+    }
+}
+
 #[derive(Clone, Debug)]
 pub enum ResourceFileType {
     kUnknown,
@@ -25,9 +35,21 @@ pub struct SourcedResourceName {
 
 #[derive(Clone, Debug)]
 pub struct ResourceFile {
-    name: ResourceName,
-    typ: ResourceFileType,
-    source: Source,
-    config: ConfigDescription,
-    exported_symbols: Vec<SourcedResourceName>,
+    pub(crate) name: ResourceName,
+    pub(crate) typ: ResourceFileType,
+    pub(crate) source: Source,
+    pub(crate) config: ConfigDescription,
+    pub(crate) exported_symbols: Vec<SourcedResourceName>,
+}
+
+impl ResourceFile {
+    pub fn new() -> ResourceFile {
+        ResourceFile {
+            name: ResourceName::new(ResourceType::None),
+            typ: ResourceFileType::kUnknown,
+            source: Source::new(),
+            config: ConfigDescription::new(),
+            exported_symbols: vec![],
+        }
+    }
 }

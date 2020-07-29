@@ -3,6 +3,7 @@ use std::fmt;
 
 pub mod config_description;
 pub mod resource_file;
+pub mod resource_path_data;
 pub mod source;
 
 #[derive(Clone, Debug)]
