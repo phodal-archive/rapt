@@ -1,4 +1,4 @@
-use crate::source::Source;
+use crate::resource::source::Source;
 
 #[derive(Clone, Debug)]
 pub enum ResourceType {
@@ -54,6 +54,7 @@ pub enum ResourceFileType {
     kProtoXml,
 }
 
+#[derive(Clone, Debug)]
 pub struct SourcedResourceName {
     name: ResourceName,
     line: usize,

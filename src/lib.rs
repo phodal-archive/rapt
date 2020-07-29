@@ -3,8 +3,7 @@ extern crate image;
 pub mod compile;
 pub mod crunch;
 pub mod proto;
-pub mod resource_file;
-pub mod source;
+pub mod resource;
 
 #[cfg(test)]
 mod tests {
