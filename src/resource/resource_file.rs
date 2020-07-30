@@ -57,3 +57,17 @@ impl ResourceFile {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use crate::resource::resource_file::ResourceName;
+    use crate::resource::ResourceType;
+
+    #[test]
+    fn should_success_convert_resource_name() {
+        let mut resource = ResourceName::new(ResourceType::None);
+        resource.entry = String::from("hello");
+        resource.package = String::from("com.phodal.rapt");
+        assert_eq!("com.phodal.rapt:None/hello", resource.to_string());
+    }
+}

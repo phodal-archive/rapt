@@ -1,7 +1,6 @@
 use crate::format::archive_writer::IArchiveWriter;
 use crate::format::container::ContainerWriter;
 use crate::proto::proto_serialize::serialize_compiled_file_to_pb;
-use crate::proto::Resources::ResourceTable;
 use crate::proto::ResourcesInternal::CompiledFile;
 use crate::resource::parse_resource_type;
 use crate::resource::resource_file::{ResourceFile, ResourceName};
