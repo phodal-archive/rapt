@@ -1,5 +1,5 @@
-use std::path::{PathBuf};
 use image::GenericImageView;
+use std::path::PathBuf;
 
 pub enum ColorType {
     PNG_COLOR_TYPE_GRAY,
@@ -14,12 +14,12 @@ pub enum ColorType {
 
 pub enum FilterMethod {
     PNG_FILTER_TYPE_BASE,
-    PNG_INTRAPIXEL_DIFFERENCING
+    PNG_INTRAPIXEL_DIFFERENCING,
 }
 
 pub enum InterlaceMethod {
     PNG_INTERLACE_NONE,
-    PNG_INTERLACE_ADAM7
+    PNG_INTERLACE_ADAM7,
 }
 
 #[derive(Debug, Clone)]

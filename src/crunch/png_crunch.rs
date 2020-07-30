@@ -1,9 +1,5 @@
-pub struct PngCrunch {
-
-}
+pub struct PngCrunch {}
 
 impl PngCrunch {
-    pub fn read_png() {
-
-    }
+    pub fn read_png() {}
 }
