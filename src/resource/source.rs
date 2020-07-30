@@ -1,6 +1,6 @@
 #[derive(Clone, Debug)]
 pub struct Source {
-    path: String,
+    pub(crate) path: String,
     line: Option<usize>,
     archive: Option<String>,
 }
