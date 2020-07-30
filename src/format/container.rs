@@ -12,13 +12,15 @@ pub struct ContainerWriter {
 }
 
 impl ContainerWriter {
-    pub fn container_writer(mut out: CodedOutputStream, entry_count: i32) {
+    pub fn new<'a>(mut out: CodedOutputStream, entry_count: i32) -> ContainerWriter {
         out.write_raw_little_endian32(K_CONTAINER_FORMAT_MAGIC);
         out.write_raw_little_endian32(K_CONTAINER_FORMAT_VERSION);
-        out.write_raw_little_endian32(entry_count as u32);
+        out.write_raw_little_endian32(entry_count.clone() as u32);
+
+        ContainerWriter { entry_count }
     }
 
-    pub fn add_res_file_entry(file: CompiledFile, std_in: Stdin) {}
+    pub fn add_res_file_entry(&self, file: CompiledFile, std_in: Stdin) {}
 }
 
 #[derive(Clone, Debug)]

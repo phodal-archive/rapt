@@ -6,6 +6,7 @@ use crate::resource::parse_resource_type;
 use crate::resource::resource_file::{ResourceFile, ResourceName};
 use crate::resource::resource_path_data::ResourcePathData;
 use protobuf::CodedOutputStream;
+use std::io;
 
 pub struct Compile {}
 
@@ -33,8 +34,11 @@ pub fn write_header_and_data_to_writer(
     writer.start_entry(output_path, 0);
 
     let output_stream = CodedOutputStream::new(writer.as_mut());
-    ContainerWriter::container_writer(output_stream, 1);
+    let container_writer = ContainerWriter::new(output_stream, 1);
 
-    let mut compiled_file = CompiledFile::new();
-    serialize_compiled_file_to_pb(file, compiled_file);
+    let mut pb_compiled_file = CompiledFile::new();
+    serialize_compiled_file_to_pb(file, pb_compiled_file.clone());
+
+    let stdin = io::stdin();
+    container_writer.add_res_file_entry(pb_compiled_file, stdin);
 }

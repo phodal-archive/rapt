@@ -226,6 +226,22 @@ umountAndroid() { hdiutil detach /Volumes/android; }
 
 ## Development
 
+CLION import
+
+[CLion project generator](https://android.googlesource.com/platform/build/soong/+/HEAD/docs/clion.md)
+
+```
+$ export SOONG_GEN_CMAKEFILES=1
+$ export SOONG_GEN_CMAKEFILES_DEBUG=1
+
+# all
+
+$ make -j64
+
+# some
+$ make frameworks/native/service/libs/ui
+```
+
 ### Proto
 
 ```

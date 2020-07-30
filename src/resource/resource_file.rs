@@ -33,8 +33,8 @@ pub enum ResourceFileType {
 
 #[derive(Clone, Debug)]
 pub struct SourcedResourceName {
-    name: ResourceName,
-    line: usize,
+    pub(crate) name: ResourceName,
+    pub(crate) line: usize,
 }
 
 #[derive(Clone, Debug)]
