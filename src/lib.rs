@@ -1,5 +1,6 @@
 extern crate image;
 
+pub mod androidrw;
 pub mod compile;
 pub mod crunch;
 pub mod format;

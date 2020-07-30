@@ -252,3 +252,10 @@ brew cask install protobuf
 ```bash
 cargo install protobuf-codegen
 ```
+
+### Compile AAPT
+
+[如何在不影响原有aapt源码的情况下编译定制版aapt](https://blog.csdn.net/sbsujjbcy/article/details/51418336)
+
+[如何在Majove下编译aapt2](https://www.jianshu.com/p/03576605f436)
+

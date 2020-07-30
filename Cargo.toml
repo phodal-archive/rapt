@@ -15,3 +15,7 @@ protobuf = { version = "2", features = ["with-bytes"] }
 [lib]
 path="src/lib.rs"
 name="rapt"
+
+
+[build-dependencies]
+cmake = "0.1.31"
