@@ -34,7 +34,7 @@ pub fn write_header_and_data_to_writer(
     writer.start_entry(output_path, 0);
 
     let output_stream = CodedOutputStream::new(writer.as_mut());
-    let container_writer = ContainerWriter::new(output_stream, 1);
+    let mut container_writer = ContainerWriter::new(output_stream, 1);
 
     let mut pb_compiled_file = CompiledFile::new();
     serialize_compiled_file_to_pb(file, pb_compiled_file.clone());
