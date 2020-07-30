@@ -5,5 +5,6 @@ pub struct IArchiveWriter {
 }
 
 impl IArchiveWriter {
-    pub fn write_file() {}
+    pub fn write_file(&self) {}
+    pub fn start_entry(&self, output_path: String, flags: usize) {}
 }
