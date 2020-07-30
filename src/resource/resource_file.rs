@@ -17,6 +17,10 @@ impl ResourceName {
             entry: "".to_string(),
         }
     }
+
+    pub fn to_string(&self) -> String {
+        format!("{}:{}/{}", self.package, self.typ, self.entry)
+    }
 }
 
 #[derive(Clone, Debug)]
