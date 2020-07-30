@@ -1,0 +1,1051 @@
+         U OpenArchive(char const*, ZipArchive**)
+         U CloseArchive(ZipArchive*)
+         U EndIteration(void*)
+         U OpenArchiveFd(int, char const*, ZipArchive**, bool)
+         U StartIteration(ZipArchive*, void**, ZipString const*, ZipString const*)
+         U ErrorCodeString(int)
+         U ExtractToMemory(ZipArchive*, ZipEntry*, unsigned char*, unsigned int)
+         U GetFileDescriptor(ZipArchive*)
+         U ExtractEntryToFile(ZipArchive*, ZipEntry*, int)
+         U Next(void*, ZipEntry*, ZipString*)
+         U FindEntry(ZipArchive*, ZipString const&, ZipEntry*)
+         U zip_archive::Reader::~Reader()
+         U zip_archive::Writer::~Writer()
+         U zip_archive::Inflate(zip_archive::Reader const&, unsigned int, unsigned int, zip_archive::Writer*, unsigned long long*)
+0002d1ac T android::ApplyStyle(android::Theme*, android::ResXMLParser*, unsigned int, unsigned int, unsigned int const*, unsigned int, unsigned int*, unsigned int*)
+00032510 T android::LoadedArsc::CreateEmpty()
+00032250 T android::LoadedArsc::Load(android::BasicStringPiece<char> const&, android::LoadedIdmap const*, bool, bool)
+00031dfc T android::LoadedArsc::LoadTable(android::Chunk const&, android::LoadedIdmap const*, bool)
+00037980 T android::ResXMLTree::setTo(void const*, unsigned int, bool)
+0003790c T android::ResXMLTree::uninit()
+00037790 T android::ResXMLTree::ResXMLTree(android::DynamicRefTable const*)
+00037888 T android::ResXMLTree::ResXMLTree()
+00037790 T android::ResXMLTree::ResXMLTree(android::DynamicRefTable const*)
+00037888 T android::ResXMLTree::ResXMLTree()
+000378c8 T android::ResXMLTree::~ResXMLTree()
+000378c8 T android::ResXMLTree::~ResXMLTree()
+         U android::VectorImpl::appendVector(android::VectorImpl const&)
+         U android::VectorImpl::editArrayImpl()
+         U android::VectorImpl::finish_vector()
+         U android::VectorImpl::removeItemsAt(unsigned int, unsigned int)
+         U android::VectorImpl::editItemLocation(unsigned int)
+         U android::VectorImpl::add(void const*)
+         U android::VectorImpl::clear()
+         U android::VectorImpl::insertAt(void const*, unsigned int, unsigned int)
+         U android::VectorImpl::VectorImpl(android::VectorImpl const&)
+         U android::VectorImpl::VectorImpl(unsigned int, unsigned int)
+         U android::VectorImpl::~VectorImpl()
+00023610 T android::_FileAsset::ensureAlignment(android::FileMap*)
+0002333c T android::_FileAsset::read(void*, unsigned int)
+00023408 T android::_FileAsset::seek(long long, int)
+000234b0 T android::_FileAsset::close()
+000234f0 T android::_FileAsset::getBuffer(bool)
+00022ad4 T android::_FileAsset::openChunk(char const*, int, long long, unsigned int)
+00022e54 T android::_FileAsset::openChunk(android::FileMap*)
+000231c4 T android::_FileAsset::_FileAsset()
+000231c4 T android::_FileAsset::_FileAsset()
+0002332c T android::_FileAsset::~_FileAsset()
+00023264 T android::_FileAsset::~_FileAsset()
+00023264 T android::_FileAsset::~_FileAsset()
+00033f64 T android::findParent(unsigned int, char const*)
+00035f64 T android::parseIdmap(void const*, unsigned int, unsigned char*, android::KeyedVector<unsigned char, android::IdmapEntries>*)
+0002f11c T android::LoadedIdmap::Load(android::BasicStringPiece<char> const&)
+0002f0c0 T android::LoadedIdmap::Lookup(android::IdmapEntry_header const*, unsigned short, unsigned short*)
+0002f0e4 T android::LoadedIdmap::LoadedIdmap(android::Idmap_header const*)
+0002f0e4 T android::LoadedIdmap::LoadedIdmap(android::Idmap_header const*)
+00033578 T android::LocaleValue::set_region(char const*)
+00033596 T android::LocaleValue::set_script(char const*)
+000335c8 T android::LocaleValue::set_variant(char const*)
+0003355a T android::LocaleValue::set_language(char const*)
+00033d3c T android::LocaleValue::InitFromParts(std::__1::__wrap_iter<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*>, std::__1::__wrap_iter<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*>)
+0003399c T android::LocaleValue::InitFromBcp47Tag(android::BasicStringPiece<char> const&)
+00033ec8 T android::LocaleValue::InitFromResTable(android::ResTable_config const&)
+000339a4 T android::LocaleValue::InitFromBcp47TagImpl(android::BasicStringPiece<char> const&, char)
+000335e4 T android::LocaleValue::InitFromFilterString(android::BasicStringPiece<char> const&)
+00041ad8 T android::TypeVariant::iterator::operator++()
+00041a94 T android::TypeVariant::TypeVariant(android::ResTable_type const*)
+00041a94 T android::TypeVariant::TypeVariant(android::ResTable_type const*)
+00035140 T android::getFileType(char const*)
+00024418 T android::AssetManager::addAssetFd(int, android::String8 const&, int*, bool, bool)
+000254cc T android::AssetManager::isUpToDate()
+000244ec T android::AssetManager::createIdmap(char const*, char const*, unsigned int, unsigned int, unsigned int**, unsigned int*)
+00024cc4 T android::AssetManager::getFileType(char const*)
+00023c14 T android::AssetManager::addAssetPath(android::String8 const&, int*, bool, bool)
+00024c10 T android::AssetManager::openNonAsset(char const*, android::Asset::AccessMode, int*)
+00024c72 T android::AssetManager::openNonAsset(int, char const*, android::Asset::AccessMode)
+00025e18 T android::AssetManager::scanDirLocked(android::String8 const&)
+000240d8 T android::AssetManager::addOverlayPath(android::String8 const&, int*)
+00023a80 T android::AssetManager::getGlobalCount()
+00048018 D android::AssetManager::ODM_OVERLAY_DIR
+0004801c D android::AssetManager::OEM_OVERLAY_DIR
+00048028 D android::AssetManager::TARGET_APK_PATH
+00025f7c T android::AssetManager::mergeInfoLocked(android::SortedVector<android::AssetDir::FileInfo>*, android::SortedVector<android::AssetDir::FileInfo> const*)
+00025d84 T android::AssetManager::openNonAssetDir(int, char const*)
+000249c6 T android::AssetManager::setLocaleLocked(char const*)
+000248e8 T android::AssetManager::addDefaultAssets()
+00025550 T android::AssetManager::getZipFileLocked(android::AssetManager::asset_path&)
+00024a90 T android::AssetManager::setConfiguration(android::ResTable_config const&, char const*)
+00048004 D android::AssetManager::RESOURCES_FILENAME
+0004800c D android::AssetManager::VENDOR_OVERLAY_DIR
+00048010 D android::AssetManager::PRODUCT_OVERLAY_DIR
+00048024 D android::AssetManager::TARGET_PACKAGE_NAME
+000256f8 T android::AssetManager::createPathNameLocked(android::AssetManager::asset_path const&, char const*)
+00025c50 T android::AssetManager::scanAndMergeDirLocked(android::SortedVector<android::AssetDir::FileInfo>*, android::AssetManager::asset_path const&, char const*, char const*)
+000258dc T android::AssetManager::scanAndMergeZipLocked(android::SortedVector<android::AssetDir::FileInfo>*, android::AssetManager::asset_path const&, char const*, char const*)
+00025604 T android::AssetManager::openAssetFromZipLocked(android::ZipFileRO const*, void*, android::Asset::AccessMode, android::String8 const&)
+000243c0 T android::AssetManager::openAssetFromFileLocked(android::String8 const&, android::Asset::AccessMode)
+00024744 T android::AssetManager::openNonAssetInPathLocked(char const*, android::Asset::AccessMode, android::AssetManager::asset_path&)
+000256a8 T android::AssetManager::createZipSourceNameLocked(android::String8 const&, android::String8 const&, android::String8 const&)
+00048020 D android::AssetManager::OVERLAY_THEME_DIR_PROPERTY
+00048014 D android::AssetManager::PRODUCT_SERVICES_OVERLAY_DIR
+00024b78 T android::AssetManager::open(char const*, android::Asset::AccessMode)
+00025418 T android::AssetManager::ZipSet::addOverlay(android::String8 const&, android::AssetManager::asset_path const&)
+0002550e T android::AssetManager::ZipSet::isUpToDate()
+000256f0 T android::AssetManager::ZipSet::getPathName(char const*)
+00025714 T android::AssetManager::ZipSet::getSharedZip(android::String8 const&)
+00024d60 T android::AssetManager::ZipSet::getZipResourceTable(android::String8 const&)
+0002528c T android::AssetManager::ZipSet::setZipResourceTable(android::String8 const&, android::ResTable*)
+00024e64 T android::AssetManager::ZipSet::getZipResourceTableAsset(android::String8 const&)
+00024f7c T android::AssetManager::ZipSet::setZipResourceTableAsset(android::String8 const&, android::Asset*)
+00026060 T android::AssetManager::ZipSet::getZip(android::String8 const&)
+0002661c T android::AssetManager::ZipSet::closeZip(int)
+000265a0 T android::AssetManager::ZipSet::~ZipSet()
+000265a0 T android::AssetManager::ZipSet::~ZipSet()
+0002582c T android::AssetManager::openDir(char const*)
+00048008 D android::AssetManager::IDMAP_BIN
+0004802c D android::AssetManager::IDMAP_DIR
+000264b2 T android::AssetManager::SharedZip::addOverlay(android::AssetManager::asset_path const&)
+0002649c T android::AssetManager::SharedZip::isUpToDate()
+00026458 T android::AssetManager::SharedZip::getResourceTable()
+0002645c T android::AssetManager::SharedZip::setResourceTable(android::ResTable*)
+000263f0 T android::AssetManager::SharedZip::getResourceTableAsset()
+00026410 T android::AssetManager::SharedZip::setResourceTableAsset(android::Asset*)
+0002621c T android::AssetManager::SharedZip::get(android::String8 const&, bool)
+0004b020 B android::AssetManager::SharedZip::gLock
+0004b024 B android::AssetManager::SharedZip::gOpen
+0002580c T android::AssetManager::SharedZip::create(int, android::String8 const&)
+0002570e T android::AssetManager::SharedZip::getZip()
+00026118 T android::AssetManager::SharedZip::SharedZip(android::String8 const&, long)
+00026190 T android::AssetManager::SharedZip::SharedZip(int, android::String8 const&)
+00026118 T android::AssetManager::SharedZip::SharedZip(android::String8 const&, long)
+00026190 T android::AssetManager::SharedZip::SharedZip(int, android::String8 const&)
+00026590 T android::AssetManager::SharedZip::~SharedZip()
+00026528 T android::AssetManager::SharedZip::~SharedZip()
+00026528 T android::AssetManager::SharedZip::~SharedZip()
+00023a8c T android::AssetManager::AssetManager()
+00023a8c T android::AssetManager::AssetManager()
+00023c04 T android::AssetManager::~AssetManager()
+00023b40 T android::AssetManager::~AssetManager()
+00023b40 T android::AssetManager::~AssetManager()
+000449b8 T android::CursorWindow::getRowSlot(unsigned int)
+0004499c T android::CursorWindow::freeLastRow()
+0004483c T android::CursorWindow::allocRowSlot()
+00044a30 T android::CursorWindow::getFieldSlot(unsigned int, unsigned int)
+00044748 T android::CursorWindow::setNumColumns(unsigned int)
+00044728 T android::CursorWindow::writeToParcel(android::Parcel*)
+00044b44 T android::CursorWindow::putBlobOrString(unsigned int, unsigned int, void const*, unsigned int, int)
+000445c4 T android::CursorWindow::createFromParcel(android::Parcel*, android::CursorWindow**)
+00044948 T android::CursorWindow::alloc(unsigned int, bool)
+00044564 T android::CursorWindow::clear()
+000443e0 T android::CursorWindow::create(android::String8 const&, unsigned int, android::CursorWindow**)
+00044b2c T android::CursorWindow::putBlob(unsigned int, unsigned int, void const*, unsigned int)
+00044c10 T android::CursorWindow::putLong(unsigned int, unsigned int, long long)
+00044c66 T android::CursorWindow::putNull(unsigned int, unsigned int)
+00044794 T android::CursorWindow::allocRow()
+00044c3a T android::CursorWindow::putDouble(unsigned int, unsigned int, double)
+00044bf8 T android::CursorWindow::putString(unsigned int, unsigned int, char const*, unsigned int)
+000443a8 T android::CursorWindow::CursorWindow(android::String8 const&, int, void*, unsigned int, bool)
+000443a8 T android::CursorWindow::CursorWindow(android::String8 const&, int, void*, unsigned int, bool)
+000443c2 T android::CursorWindow::~CursorWindow()
+000443c2 T android::CursorWindow::~CursorWindow()
+0003777a T android::ResXMLParser::setPosition(android::ResXMLParser::ResXMLPosition const&)
+00037788 T android::ResXMLParser::setSourceResourceId(unsigned int)
+00036d8a T android::ResXMLParser::next()
+00036d6c T android::ResXMLParser::restart()
+00036db0 T android::ResXMLParser::nextNode()
+00036d62 T android::ResXMLParser::ResXMLParser(android::ResXMLTree const&)
+00036d62 T android::ResXMLParser::ResXMLParser(android::ResXMLTree const&)
+0002ce54 T android::ResolveAttrs(android::Theme*, unsigned int, unsigned int, unsigned int*, unsigned int, unsigned int*, unsigned int, unsigned int*, unsigned int*)
+00034080 T android::findDistance(unsigned int, char const*, unsigned int const*, unsigned int)
+0002704c T android::AssetManager2::SetApkAssets(std::__1::vector<android::ApkAssets const*, std::__1::allocator<android::ApkAssets const*> > const&, bool, bool)
+00028f80 T android::AssetManager2::GetBagResIdStack(unsigned int)
+000275b4 T android::AssetManager2::InvalidateCaches(unsigned int)
+00027b04 T android::AssetManager2::SetConfiguration(android::ResTable_config const&)
+00027420 T android::AssetManager2::RebuildFilterList(bool)
+00027084 T android::AssetManager2::BuildDynamicRefTable()
+00029eb0 T android::AssetManager2::GetAssignedPackageId(android::LoadedPackage const*)
+00028688 T android::AssetManager2::SetResourceResolutionLoggingEnabled(bool)
+00029850 T android::AssetManager2::GetBag(unsigned int)
+000290b4 T android::AssetManager2::GetBag(unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >&)
+00029ee2 T android::AssetManager2::NewTheme()
+00026fe4 T android::AssetManager2::AssetManager2()
+00026fe4 T android::AssetManager2::AssetManager2()
+0002dae8 T android::ChunkIterator::VerifyNextChunk()
+0002dab8 T android::ChunkIterator::VerifyNextChunkNonFatal()
+0002d9c8 T android::ChunkIterator::Next()
+0002fdea T android::LoadedPackage::GetEntryOffset(android::ResTable_type const*, unsigned short)
+0002fe54 T android::LoadedPackage::GetEntryFromOffset(android::ResTable_type const*, unsigned int)
+000306c0 T android::LoadedPackage::Load(android::Chunk const&, android::LoadedIdmap const*, bool, bool)
+0002fd70 T android::LoadedPackage::GetEntry(android::ResTable_type const*, unsigned short)
+0002fc88 T android::LoadedPackage::iterator::iterator(android::LoadedPackage const*, unsigned int, unsigned int)
+0002fc88 T android::LoadedPackage::iterator::iterator(android::LoadedPackage const*, unsigned int, unsigned int)
+0002fcd0 T android::LoadedPackage::iterator::operator++()
+0002fa26 T android::LoadedPackage::LoadedPackage()
+0002fa26 T android::LoadedPackage::LoadedPackage()
+0002fab0 T android::LoadedPackage::~LoadedPackage()
+0002fab0 T android::LoadedPackage::~LoadedPackage()
+0003654e T android::ResStringPool::setToEmpty()
+00036200 T android::ResStringPool::setTo(void const*, unsigned int, bool)
+000364fa T android::ResStringPool::uninit()
+000361c8 T android::ResStringPool::ResStringPool(void const*, unsigned int, bool)
+000361a8 T android::ResStringPool::ResStringPool()
+000361c8 T android::ResStringPool::ResStringPool(void const*, unsigned int, bool)
+000361a8 T android::ResStringPool::ResStringPool()
+0003649c T android::ResStringPool::~ResStringPool()
+0003649c T android::ResStringPool::~ResStringPool()
+0003ee24 T android::StringPoolRef::StringPoolRef(android::ResStringPool const*, unsigned int)
+0003ee24 T android::StringPoolRef::StringPoolRef(android::ResStringPool const*, unsigned int)
+00042d88 T android::back_up_files(int, android::BackupDataWriter*, int, char const* const*, char const* const*, int)
+00034034 T android::findAncestors(unsigned int*, int*, unsigned int, char const*, unsigned int const*, unsigned int)
+000436a0 T android::write_tarfile(android::String8 const&, android::String8 const&, android::String8 const&, android::String8 const&, long*, android::BackupDataWriter*)
+         U android::LooperCallback::~LooperCallback()
+         U android::LooperCallback::~LooperCallback()
+0003618c T android::Res_png_9patch::deserialize(void*)
+00035d6a T android::Res_png_9patch::deviceToFile()
+00035de8 T android::Res_png_9patch::fileToDevice()
+00035e78 T android::Res_png_9patch::serialize(android::Res_png_9patch const&, int const*, int const*, unsigned int const*)
+00035efc T android::Res_png_9patch::serialize(android::Res_png_9patch const&, int const*, int const*, unsigned int const*, void*)
+000414bc T android::ToResourceName(android::StringPoolRef const&, android::StringPoolRef const&, android::BasicStringPiece<char> const&, android::AssetManager2::ResourceName*)
+0003cf04 T android::U16StringToInt(char16_t const*, unsigned int, android::Res_value*)
+000351bc T android::getFileModDate(char const*)
+         U android::sp_report_race()
+0003f030 T android::DynamicRefTable::addMapping(android::String16 const&, unsigned char)
+0003f214 T android::DynamicRefTable::addMapping(unsigned char, unsigned char)
+0003b1d8 T android::DynamicRefTable::addMappings(android::DynamicRefTable const&)
+0003f090 T android::DynamicRefTable::load(android::ResTable_lib_header const*)
+0003f1d4 T android::DynamicRefTable::DynamicRefTable(unsigned char, bool)
+0003f194 T android::DynamicRefTable::DynamicRefTable()
+0003f1d4 T android::DynamicRefTable::DynamicRefTable(unsigned char, bool)
+0003f194 T android::DynamicRefTable::DynamicRefTable()
+00037cbe T android::ResTable_config::packRegion(char const*)
+00037d90 T android::ResTable_config::copyFromDtoH(android::ResTable_config const&)
+00037c82 T android::ResTable_config::packLanguage(char const*)
+00039158 T android::ResTable_config::setBcp47Locale(char const*)
+00037b98 T android::ResTable_config::copyFromDeviceNoSwap(android::ResTable_config const&)
+00037de8 T android::ResTable_config::swapHtoD()
+00042c74 T android::BackupDataReader::HasEntities()
+00042be4 T android::BackupDataReader::skip_padding()
+00042d38 T android::BackupDataReader::ReadEntityData(void*, unsigned int)
+00042a48 T android::BackupDataReader::ReadNextHeader(bool*, int*)
+00042cc8 T android::BackupDataReader::SkipEntityData()
+00042c92 T android::BackupDataReader::ReadEntityHeader(android::String8*, unsigned int*)
+00042a44 T android::BackupDataReader::Status()
+00042a0a T android::BackupDataReader::BackupDataReader(int)
+00042a0a T android::BackupDataReader::BackupDataReader(int)
+00042a36 T android::BackupDataReader::~BackupDataReader()
+00042a36 T android::BackupDataReader::~BackupDataReader()
+00042a04 T android::BackupDataWriter::SetKeyPrefix(android::String8 const&)
+000429d8 T android::BackupDataWriter::WriteEntityData(void const*, unsigned int)
+00042890 T android::BackupDataWriter::WriteEntityHeader(android::String8 const&, unsigned int)
+00042830 T android::BackupDataWriter::write_padding_for(int)
+000427fa T android::BackupDataWriter::BackupDataWriter(int)
+000427fa T android::BackupDataWriter::BackupDataWriter(int)
+00042820 T android::BackupDataWriter::~BackupDataWriter()
+00042820 T android::BackupDataWriter::~BackupDataWriter()
+         U android::SortedVectorImpl::add(void const*)
+         U android::SortedVectorImpl::remove(void const*)
+         U android::SortedVectorImpl::SortedVectorImpl(unsigned int, unsigned int)
+         U android::SortedVectorImpl::~SortedVectorImpl()
+         U android::SortedVectorImpl::operator=(android::SortedVectorImpl const&)
+000237e2 T android::_CompressedAsset::read(void*, unsigned int)
+00023844 T android::_CompressedAsset::seek(long long, int)
+000238d0 T android::_CompressedAsset::close()
+00023912 T android::_CompressedAsset::getBuffer(bool)
+0002301c T android::_CompressedAsset::openChunk(android::FileMap*, unsigned int)
+00022d3c T android::_CompressedAsset::openChunk(int, long long, int, unsigned int, unsigned int)
+00023694 T android::_CompressedAsset::_CompressedAsset()
+00023694 T android::_CompressedAsset::_CompressedAsset()
+000237d4 T android::_CompressedAsset::~_CompressedAsset()
+0002373c T android::_CompressedAsset::~_CompressedAsset()
+0002373c T android::_CompressedAsset::~_CompressedAsset()
+0002db50 T android::ConfigDescription::DefaultConfig()
+0002eb20 T android::ConfigDescription::ApplyVersionForCompatibility(android::ConfigDescription*)
+0002dbbc T android::ConfigDescription::Parse(android::BasicStringPiece<char> const&, android::ConfigDescription*)
+0004400c T android::RestoreHelperBase::WriteSnapshot(int)
+00043de0 T android::RestoreHelperBase::WriteFile(android::String8 const&, android::BackupDataReader*)
+00043d84 T android::RestoreHelperBase::RestoreHelperBase()
+00043d84 T android::RestoreHelperBase::RestoreHelperBase()
+00043db4 T android::RestoreHelperBase::~RestoreHelperBase()
+00043db4 T android::RestoreHelperBase::~RestoreHelperBase()
+0002d680 T android::RetrieveAttributes(android::AssetManager2*, android::ResXMLParser*, unsigned int*, unsigned int, unsigned int*, unsigned int*)
+0004365c T android::send_tarfile_chunk(android::BackupDataWriter*, char const*, unsigned int)
+000413f4 T android::ExtractResourceName(android::BasicStringPiece<char> const&, android::BasicStringPiece<char>*, android::BasicStringPiece<char>*, android::BasicStringPiece<char>*)
+         U android::DisplayEventReceiver::requestNextVsync()
+         U android::DisplayEventReceiver::getEvents(android::DisplayEventReceiver::Event*, unsigned int)
+         U android::DisplayEventReceiver::DisplayEventReceiver(android::ISurfaceComposer::VsyncSource, android::ISurfaceComposer::ConfigChanged)
+000419f0 T android::StreamingZipInflater::seekAbsolute(long long)
+0004197c T android::StreamingZipInflater::readNextChunk()
+000416d0 T android::StreamingZipInflater::initInflateState()
+000417f0 T android::StreamingZipInflater::read(void*, unsigned int)
+00041740 T android::StreamingZipInflater::StreamingZipInflater(android::FileMap*, unsigned int)
+00041638 T android::StreamingZipInflater::StreamingZipInflater(int, long long, unsigned int, unsigned int)
+00041740 T android::StreamingZipInflater::StreamingZipInflater(android::FileMap*, unsigned int)
+00041638 T android::StreamingZipInflater::StreamingZipInflater(int, long long, unsigned int, unsigned int)
+000417c8 T android::StreamingZipInflater::~StreamingZipInflater()
+000417c8 T android::StreamingZipInflater::~StreamingZipInflater()
+00037c3e T android::packLanguageOrRegion(char const*, char, char*)
+00044cd8 T android::DisplayEventDispatcher::initialize()
+00044f70 T android::DisplayEventDispatcher::handleEvent(int, int, void*)
+00044d98 T android::DisplayEventDispatcher::scheduleVsync()
+00044e30 T android::DisplayEventDispatcher::processPendingEvents(long long*, unsigned long long*, unsigned int*)
+00044d70 T android::DisplayEventDispatcher::dispose()
+00044c92 T android::DisplayEventDispatcher::DisplayEventDispatcher(android::sp<android::Looper> const&, android::ISurfaceComposer::VsyncSource, android::ISurfaceComposer::ConfigChanged)
+0004b0bc B android::REPRESENTATIVE_LOCALES
+00037bea T android::unpackLanguageOrRegion(char const*, char, char*)
+000343d4 T android::localeDataComputeScript(char*, char const*, char const*)
+000340b8 T android::localeDataCompareRegions(char const*, char const*, char const*, char const*, char const*)
+00041524 T android::ToFormattedResourceString(android::AssetManager2::ResourceName*)
+0002d074 W android::BackTrackingAttributeFinder<android::BagAttributeFinder, android::ResolvedBag::Entry const*>::Find(unsigned int)
+0002d544 W android::BackTrackingAttributeFinder<android::XmlAttributeFinder, unsigned int>::Find(unsigned int)
+00034518 T android::localeDataIsCloseToUsEnglish(char const*)
+         U android::base::LogMessage::stream()
+         U android::base::LogMessage::LogMessage(char const*, unsigned int, android::base::LogId, android::base::LogSeverity, char const*, int)
+         U android::base::LogMessage::~LogMessage()
+         U android::base::StringPrintf(char const*, ...)
+         U android::base::StringAppendF(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*, char const*, ...)
+         U android::base::ReadFullyAtOffset(int, void*, unsigned int, long long)
+         U android::base::ScopedLogSeverity::ScopedLogSeverity(android::base::LogSeverity)
+         U android::base::ScopedLogSeverity::~ScopedLogSeverity()
+         U android::base::GetMinimumLogSeverity()
+         U android::base::SystemErrorCodeToString(int)
+00041d24 T android::util::Utf16ToUtf8(android::BasicStringPiece<char16_t> const&)
+00041c54 T android::util::Utf8ToUtf16(android::BasicStringPiece<char> const&)
+000358d4 T android::util::ExecuteBinary(std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > const&)
+00041db0 T android::util::SplitAndLowercase(android::BasicStringPiece<char> const&, char)
+00041be0 T android::util::ReadUtf16StringFromDevice(unsigned short const*, unsigned int, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >*)
+0002314c T android::Asset::handleSeek(long long, int, long long, long long)
+000227c0 T android::Asset::registerAsset(android::Asset*)
+000229c4 T android::Asset::createFromFile(char const*, android::Asset::AccessMode)
+00022888 T android::Asset::getGlobalCount()
+0002281c T android::Asset::unregisterAsset(android::Asset*)
+000228ac T android::Asset::getAssetAllocations()
+00023058 T android::Asset::createFromCompressedMap(std::__1::unique_ptr<android::FileMap, std::__1::default_delete<android::FileMap> >, unsigned int, android::Asset::AccessMode)
+00022f38 T android::Asset::createFromCompressedMap(android::FileMap*, unsigned int, android::Asset::AccessMode)
+00022b94 T android::Asset::createFromCompressedFile(char const*, android::Asset::AccessMode)
+00022e6c T android::Asset::createFromUncompressedMap(std::__1::unique_ptr<android::FileMap, std::__1::default_delete<android::FileMap> >, android::Asset::AccessMode)
+00022d94 T android::Asset::createFromUncompressedMap(android::FileMap*, android::Asset::AccessMode)
+0002299c T android::Asset::Asset()
+00029f58 T android::Theme::ApplyStyle(unsigned int, bool)
+0002a210 T android::Theme::Clear()
+0002a24c T android::Theme::SetTo(android::Theme const&)
+00029f02 T android::Theme::Theme(android::AssetManager2*)
+00029f02 T android::Theme::Theme(android::AssetManager2*)
+00029f16 T android::Theme::~Theme()
+00029f16 T android::Theme::~Theme()
+         U android::Looper::addFd(int, int, int, android::sp<android::LooperCallback> const&, void*)
+         U android::Looper::removeFd(int)
+         U android::Parcel::writeString8(android::String8 const&)
+         U android::Parcel::writeDupFileDescriptor(int)
+         U android::FileMap::create(char const*, int, long long, unsigned int, bool)
+         U android::FileMap::FileMap()
+         U android::FileMap::~FileMap()
+00035840 T android::ObbFile::removeFrom(char const*)
+000358ac T android::ObbFile::removeFrom(int)
+00035314 T android::ObbFile::parseObbFile(int)
+000355a4 T android::ObbFile::writeTo(char const*)
+000355fc T android::ObbFile::writeTo(int)
+0003527c T android::ObbFile::readFrom(char const*)
+000352ec T android::ObbFile::readFrom(int)
+000351f0 T android::ObbFile::ObbFile()
+000351f0 T android::ObbFile::ObbFile()
+00035250 T android::ObbFile::~ObbFile()
+00035228 T android::ObbFile::~ObbFile()
+00035228 T android::ObbFile::~ObbFile()
+         U android::RefBase::onFirstRef()
+         U android::RefBase::renameRefs(unsigned int, android::ReferenceRenamer const&)
+         U android::RefBase::renameRefId(android::RefBase*, void const*, void const*)
+         U android::RefBase::weakref_type::attemptIncStrong(void const*)
+         U android::RefBase::weakref_type::decWeak(void const*)
+         U android::RefBase::weakref_type::incWeak(void const*)
+         U android::RefBase::onLastWeakRef(void const*)
+         U android::RefBase::onLastStrongRef(void const*)
+         U android::RefBase::onIncStrongAttempted(unsigned int, void const*)
+         U android::RefBase::RefBase()
+         U android::RefBase::~RefBase()
+         U android::String8::appendPath(char const*)
+         U android::String8::lockBuffer(unsigned int)
+         U android::String8::appendFormat(char const*, ...)
+         U android::String8::unlockBuffer(unsigned int)
+         U android::String8::setTo(char const*)
+         U android::String8::setTo(android::String8 const&)
+         U android::String8::append(char const*)
+         U android::String8::append(char const*, unsigned int)
+         U android::String8::append(android::String8 const&)
+         U android::String8::String8(char16_t const*)
+         U android::String8::String8(char16_t const*, unsigned int)
+         U android::String8::String8(char const*)
+         U android::String8::String8(char const*, unsigned int)
+         U android::String8::String8(android::String16 const&)
+         U android::String8::String8(android::String8 const&)
+         U android::String8::String8()
+         U android::String8::~String8()
+00023a24 T android::AssetDir::FileInfo::findEntry(android::SortedVector<android::AssetDir::FileInfo> const*, android::String8 const&)
+0003a89c T android::ResTable::addInternal(void const*, unsigned int, void const*, unsigned int, bool, int, bool, bool)
+0003d0aa T android::ResTable::stringToInt(char16_t const*, unsigned int, android::Res_value*)
+0003fba0 T android::ResTable::getIdmapInfo(void const*, unsigned int, unsigned int*, unsigned int*, unsigned int*, android::String8*, android::String8*)
+0003b368 T android::ResTable::parsePackage(android::ResTable_package const*, android::ResTable::Header const*, bool, bool)
+0003e4e8 T android::ResTable::collectString(android::String16*, char16_t const*, unsigned int, bool, char const**, bool)
+0003c640 T android::ResTable::setParameters(android::ResTable_config const*)
+0003d0b0 T android::ResTable::stringToFloat(char16_t const*, unsigned int, android::Res_value*)
+0003cd80 T android::ResTable::expandResourceRef(char16_t const*, unsigned int, android::String16*, android::String16*, android::String16*, android::String16 const*, android::String16 const*, char const**, bool*)
+0003fc64 T android::ResTable::normalizeForOutput(char const*)
+0003ac50 T android::ResTable::add(void const*, unsigned int, void const*, unsigned int, int, bool, bool)
+0003ac30 T android::ResTable::add(void const*, unsigned int, int, bool)
+0003acd8 T android::ResTable::add(android::Asset*, android::Asset*, int, bool, bool, bool)
+0003ac74 T android::ResTable::add(android::Asset*, int, bool)
+0003ad70 T android::ResTable::add(android::ResTable*, bool)
+00039ba4 T android::ResTable::Theme::applyStyle(unsigned int, bool)
+00039b3e T android::ResTable::Theme::copy_package(android::ResTable::Theme::package_info*)
+00039b18 T android::ResTable::Theme::free_package(android::ResTable::Theme::package_info*)
+0003a3f8 T android::ResTable::Theme::clear()
+0003a278 T android::ResTable::Theme::setTo(android::ResTable::Theme const&)
+00039ac4 T android::ResTable::Theme::Theme(android::ResTable const&)
+00039ac4 T android::ResTable::Theme::Theme(android::ResTable const&)
+00039ade T android::ResTable::Theme::~Theme()
+00039ade T android::ResTable::Theme::~Theme()
+0003ab70 T android::ResTable::uninit()
+0003b2d4 T android::ResTable::addEmpty(int)
+0003a7ec T android::ResTable::ResTable(void const*, unsigned int, int, bool)
+0003a764 T android::ResTable::ResTable()
+0003a7ec T android::ResTable::ResTable(void const*, unsigned int, int, bool)
+0003a764 T android::ResTable::ResTable()
+0003ab1c T android::ResTable::~ResTable()
+0003ab1c T android::ResTable::~ResTable()
+         U android::String16::setTo(char16_t const*, unsigned int)
+         U android::String16::setTo(android::String16 const&)
+         U android::String16::append(android::String16 const&)
+         U android::String16::String16(char16_t const*)
+         U android::String16::String16(char16_t const*, unsigned int)
+         U android::String16::String16(char const*)
+         U android::String16::String16(char const*, unsigned int)
+         U android::String16::String16(android::String16 const&)
+         U android::String16::String16()
+         U android::String16::~String16()
+000425f0 T android::ZipUtils::examineGzip(__sFILE*, int*, long*, long*, unsigned long*)
+0004249c T android::ZipUtils::inflateToBuffer(__sFILE*, void*, long, long)
+0004257c T android::ZipUtils::inflateToBuffer(void const*, void*, long, long)
+0004250c T android::ZipUtils::inflateToBuffer(int, void*, long, long)
+00021af4 T android::ApkAssets::LoadFromFd(android::base::unique_fd_impl<android::base::DefaultCloser>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool, bool)
+000216a0 T android::ApkAssets::LoadOverlay(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool)
+00021868 T android::ApkAssets::CreateAssetFromFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+00021614 T android::ApkAssets::LoadAsSharedLibrary(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool)
+00021040 T android::ApkAssets::Load(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool)
+000210c8 T android::ApkAssets::LoadImpl(android::base::unique_fd_impl<android::base::DefaultCloser>, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::unique_ptr<android::Asset, std::__1::default_delete<android::Asset> >, std::__1::unique_ptr<android::LoadedIdmap const, std::__1::default_delete<android::LoadedIdmap const> >, bool, bool)
+00021014 T android::ApkAssets::ApkAssets(ZipArchive*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, long)
+00021014 T android::ApkAssets::ApkAssets(ZipArchive*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, long)
+00035d58 T android::Res_value::copyFrom_dtoh(android::Res_value const&)
+00042370 T android::ZipFileRO::endIteration(void*)
+00042242 T android::ZipFileRO::startIteration(void**)
+0004224c T android::ZipFileRO::startIteration(void**, char const*, char const*)
+000420b8 T android::ZipFileRO::open(char const*)
+00042124 T android::ZipFileRO::openFd(int, char const*, bool)
+00042320 T android::ZipFileRO::nextEntry(void*)
+000420a0 T android::ZipFileRO::~ZipFileRO()
+000420a0 T android::ZipFileRO::~ZipFileRO()
+         U ZipString::ZipString(char const*)
+0003069c T android::LoadedArsc::GetPackageById(unsigned char) const
+000376e8 T android::ResXMLTree::validateNode(android::ResXMLTree_node const*) const
+00037b94 T android::ResXMLTree::getError() const
+0002363a T android::_FileAsset::openFileDescriptor(long long*, long long*) const
+0002f6a4 T android::LoadedIdmap::TargetPackageId() const
+0002f6ac T android::LoadedIdmap::GetEntryMapForType(unsigned char) const
+00033f06 T android::LocaleValue::WriteTo(android::ResTable_config*) const
+00041aec T android::TypeVariant::iterator::operator*() const
+00025540 T android::AssetManager::getLocales(android::Vector<android::String8>*, bool) const
+0002536c T android::AssetManager::getResTable(bool) const
+0002498a T android::AssetManager::getAssetPath(int) const
+000254c4 T android::AssetManager::getResources(bool) const
+00024968 T android::AssetManager::nextAssetPath(int) const
+00024ce4 T android::AssetManager::openIdmapLocked(android::AssetManager::asset_path const&) const
+00024b2c T android::AssetManager::getConfiguration(android::ResTable_config*) const
+00025068 T android::AssetManager::addSystemOverlays(char const*, android::String8 const&, android::ResTable*, unsigned int) const
+00023e7c T android::AssetManager::appendPathToResTable(android::AssetManager::asset_path&, bool) const
+00024a04 T android::AssetManager::updateResourceParamsLocked() const
+00023e2c T android::AssetManager::ZipSet::getOverlay(android::String8 const&, unsigned int, android::AssetManager::asset_path*) const
+00026668 T android::AssetManager::ZipSet::getIndex(android::String8 const&) const
+000264b8 T android::AssetManager::SharedZip::getOverlay(unsigned int, android::AssetManager::asset_path*) const
+00036e8a T android::ResXMLParser::getComment(unsigned int*) const
+00036d80 T android::ResXMLParser::getStrings() const
+0003776c T android::ResXMLParser::getPosition(android::ResXMLParser::ResXMLPosition*) const
+00036e7c T android::ResXMLParser::getCommentID() const
+00036d86 T android::ResXMLParser::getEventType() const
+00036ee0 T android::ResXMLParser::getTextValue(android::Res_value*) const
+000376b2 T android::ResXMLParser::indexOfClass() const
+000376cc T android::ResXMLParser::indexOfStyle() const
+00036ea2 T android::ResXMLParser::getLineNumber() const
+00036fd6 T android::ResXMLParser::getElementName(unsigned int*) const
+00036f54 T android::ResXMLParser::getNamespaceUri(unsigned int*) const
+00037298 T android::ResXMLParser::getAttributeData(unsigned int) const
+000370b8 T android::ResXMLParser::getAttributeName(unsigned int, unsigned int*) const
+00036fb8 T android::ResXMLParser::getElementNameID() const
+00037464 T android::ResXMLParser::indexOfAttribute(char16_t const*, unsigned int, char16_t const*, unsigned int) const
+000373d8 T android::ResXMLParser::indexOfAttribute(char const*, char const*) const
+00036ffe T android::ResXMLParser::getAttributeCount() const
+000370f2 T android::ResXMLParser::getAttributeName8(unsigned int, unsigned int*) const
+000372f8 T android::ResXMLParser::getAttributeValue(unsigned int, android::Res_value*) const
+00036f3e T android::ResXMLParser::getNamespaceUriID() const
+00037094 T android::ResXMLParser::getAttributeNameID(unsigned int) const
+00036f1c T android::ResXMLParser::getNamespacePrefix(unsigned int*) const
+00036f92 T android::ResXMLParser::getElementNamespace(unsigned int*) const
+0003778c T android::ResXMLParser::getSourceResourceId() const
+0003726e T android::ResXMLParser::getAttributeDataType(unsigned int) const
+00036f06 T android::ResXMLParser::getNamespacePrefixID() const
+0003712c T android::ResXMLParser::getAttributeNameResID(unsigned int) const
+00037030 T android::ResXMLParser::getAttributeNamespace(unsigned int, unsigned int*) const
+00036f76 T android::ResXMLParser::getElementNamespaceID() const
+00037062 T android::ResXMLParser::getAttributeNamespace8(unsigned int, unsigned int*) const
+0003700e T android::ResXMLParser::getAttributeNamespaceID(unsigned int) const
+00037234 T android::ResXMLParser::getAttributeStringValue(unsigned int, unsigned int*) const
+00037210 T android::ResXMLParser::getAttributeValueStringID(unsigned int) const
+00036ec2 T android::ResXMLParser::getText(unsigned int*) const
+00036eb0 T android::ResXMLParser::getTextID() const
+00037698 T android::ResXMLParser::indexOfID() const
+00026a4e W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_compare(void const*, void const*) const
+000268ea W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_destroy(void*, unsigned int) const
+000268d0 W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_construct(void*, unsigned int) const
+0002696e W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_move_forward(void*, void const*, unsigned int) const
+00026a00 W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_move_backward(void*, void const*, unsigned int) const
+00026910 W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_copy(void*, void const*, unsigned int) const
+00026940 W android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >::do_splat(void*, void const*, unsigned int) const
+00044214 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_compare(void const*, void const*) const
+00044080 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_destroy(void*, unsigned int) const
+00044064 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_construct(void*, unsigned int) const
+00044134 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_move_forward(void*, void const*, unsigned int) const
+000441be W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_move_backward(void*, void const*, unsigned int) const
+0004409c W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_copy(void*, void const*, unsigned int) const
+000440e4 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >::do_splat(void*, void const*, unsigned int) const
+0004438a W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_compare(void const*, void const*) const
+00044298 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_destroy(void*, unsigned int) const
+00044280 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_construct(void*, unsigned int) const
+00044312 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_move_forward(void*, void const*, unsigned int) const
+00044354 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_move_backward(void*, void const*, unsigned int) const
+000442b0 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_copy(void*, void const*, unsigned int) const
+000442e0 W android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >::do_splat(void*, void const*, unsigned int) const
+0002adbc W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_compare(void const*, void const*) const
+0002ad48 W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_destroy(void*, unsigned int) const
+0002ad30 W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_construct(void*, unsigned int) const
+0002ad9c W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_move_forward(void*, void const*, unsigned int) const
+0002adac W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_move_backward(void*, void const*, unsigned int) const
+0002ad60 W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_copy(void*, void const*, unsigned int) const
+0002ad7e W android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >::do_splat(void*, void const*, unsigned int) const
+00040d96 W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_compare(void const*, void const*) const
+00040d18 W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_destroy(void*, unsigned int) const
+00040d04 W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_construct(void*, unsigned int) const
+00040d4e W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_move_forward(void*, void const*, unsigned int) const
+00040d7a W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_move_backward(void*, void const*, unsigned int) const
+00040d1a W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_copy(void*, void const*, unsigned int) const
+00040d36 W android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >::do_splat(void*, void const*, unsigned int) const
+0002d8c8 W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_compare(void const*, void const*) const
+0002d83e W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_destroy(void*, unsigned int) const
+0002d83c W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_construct(void*, unsigned int) const
+0002d8a8 W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_move_forward(void*, void const*, unsigned int) const
+0002d8b8 W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_move_backward(void*, void const*, unsigned int) const
+0002d840 W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_copy(void*, void const*, unsigned int) const
+0002d850 W android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >::do_splat(void*, void const*, unsigned int) const
+0002d9b4 W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_compare(void const*, void const*) const
+0002d92a W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_destroy(void*, unsigned int) const
+0002d928 W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_construct(void*, unsigned int) const
+0002d994 W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_move_forward(void*, void const*, unsigned int) const
+0002d9a4 W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_move_backward(void*, void const*, unsigned int) const
+0002d92c W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_copy(void*, void const*, unsigned int) const
+0002d93c W android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >::do_splat(void*, void const*, unsigned int) const
+00026c36 W android::SortedVector<android::AssetDir::FileInfo>::do_compare(void const*, void const*) const
+00026ab2 W android::SortedVector<android::AssetDir::FileInfo>::do_destroy(void*, unsigned int) const
+00026a94 W android::SortedVector<android::AssetDir::FileInfo>::do_construct(void*, unsigned int) const
+00026b4c W android::SortedVector<android::AssetDir::FileInfo>::do_move_forward(void*, void const*, unsigned int) const
+00026be8 W android::SortedVector<android::AssetDir::FileInfo>::do_move_backward(void*, void const*, unsigned int) const
+00026ad0 W android::SortedVector<android::AssetDir::FileInfo>::do_copy(void*, void const*, unsigned int) const
+00026b0e W android::SortedVector<android::AssetDir::FileInfo>::do_splat(void*, void const*, unsigned int) const
+00028cf0 T android::AssetManager2::GetResource(unsigned int, bool, unsigned short, android::Res_value*, android::ResTable_config*, unsigned int*) const
+00027d88 T android::AssetManager2::OpenNonAsset(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, android::Asset::AccessMode, int*) const
+00027e60 T android::AssetManager2::OpenNonAsset(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int, android::Asset::AccessMode) const
+0002994c T android::AssetManager2::GetResourceId(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) const
+00028b44 T android::AssetManager2::GetResourceName(unsigned int, android::AssetManager2::ResourceName*) const
+00028ca0 T android::AssetManager2::GetResourceFlags(unsigned int, unsigned int*) const
+00028e40 T android::AssetManager2::ResolveReference(int, android::Res_value*, android::ResTable_config*, unsigned int*, unsigned int*) const
+00027c34 T android::AssetManager2::GetResourceLocales(bool, bool) const
+00027a68 T android::AssetManager2::GetStringPoolForCookie(int) const
+000286cc T android::AssetManager2::GetLastResourceResolution() const
+00027b70 T android::AssetManager2::GetResourceConfigurations(bool, bool) const
+00027aa4 T android::AssetManager2::GetDynamicRefTableForCookie(int) const
+00027ad6 T android::AssetManager2::GetOverlayableMapForPackage(unsigned int) const
+00027a84 T android::AssetManager2::GetDynamicRefTableForPackage(unsigned int) const
+00027cf8 T android::AssetManager2::Open(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, android::Asset::AccessMode) const
+00027df8 T android::AssetManager2::Open(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, int, android::Asset::AccessMode) const
+00027e8c T android::AssetManager2::OpenDir(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&) const
+000276bc T android::AssetManager2::DumpToLog() const
+00028008 T android::AssetManager2::FindEntry(unsigned int, unsigned short, bool, bool, android::FindEntryResult*) const
+00030460 T android::LoadedPackage::CollectLocales(bool, std::__1::set<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >*) const
+000305c8 T android::LoadedPackage::FindEntryByName(std::__1::basic_string<char16_t, std::__1::char_traits<char16_t>, std::__1::allocator<char16_t> > const&, std::__1::basic_string<char16_t, std::__1::char_traits<char16_t>, std::__1::allocator<char16_t> > const&) const
+000302cc T android::LoadedPackage::CollectConfigurations(bool, std::__1::set<android::ResTable_config, std::__1::less<android::ResTable_config>, std::__1::allocator<android::ResTable_config> >*) const
+0002fd4e T android::LoadedPackage::iterator::operator*() const
+00036d32 T android::ResStringPool::styleCount() const
+00036b80 T android::ResStringPool::indexOfString(char16_t const*, unsigned int) const
+000368cc T android::ResStringPool::stringDecodeAt(unsigned int, unsigned char const*, unsigned int, unsigned int*) const
+00036a70 T android::ResStringPool::string8ObjectAt(unsigned int) const
+00036d24 T android::ResStringPool::size() const
+00036d40 T android::ResStringPool::bytes() const
+00036d58 T android::ResStringPool::isUTF8() const
+00036ad0 T android::ResStringPool::styleAt(android::ResStringPool_ref const&) const
+00036b28 T android::ResStringPool::styleAt(unsigned int) const
+0003664c T android::ResStringPool::getError() const
+00036d4e T android::ResStringPool::isSorted() const
+00036650 T android::ResStringPool::stringAt(unsigned int, unsigned int*) const
+0003695c T android::ResStringPool::string8At(unsigned int, unsigned int*) const
+0003c15c T android::StringPoolRef::string8(unsigned int*) const
+0003c178 T android::StringPoolRef::string16(unsigned int*) const
+00035e66 T android::Res_png_9patch::serializedSize() const
+00037194 T android::DynamicRefTable::lookupResourceId(unsigned int*) const
+0003738c T android::DynamicRefTable::lookupResourceValue(android::Res_value*) const
+0003782c T android::DynamicRefTable::clone() const
+0003874a T android::ResTable_config::isBetterThan(android::ResTable_config const&, android::ResTable_config const*) const
+00037d44 T android::ResTable_config::unpackRegion(char*) const
+00037ef8 T android::ResTable_config::compareLogical(android::ResTable_config const&) const
+00039000 T android::ResTable_config::getBcp47Locale(char*, bool) const
+00037cfa T android::ResTable_config::unpackLanguage(char*) const
+00038d7c T android::ResTable_config::appendDirLocale(android::String8&) const
+0003859a T android::ResTable_config::isLocaleBetterThan(android::ResTable_config const&, android::ResTable_config const*) const
+00038276 T android::ResTable_config::isMoreSpecificThan(android::ResTable_config const&) const
+000381b8 T android::ResTable_config::isLocaleMoreSpecificThan(android::ResTable_config const&) const
+00038038 T android::ResTable_config::diff(android::ResTable_config const&) const
+00038b1c T android::ResTable_config::match(android::ResTable_config const&) const
+00037dec T android::ResTable_config::compare(android::ResTable_config const&) const
+00039398 T android::ResTable_config::toString() const
+         U android::SortedVectorImpl::indexOf(void const*) const
+0002ef34 T android::ConfigDescription::ConflictsWith(android::ConfigDescription const&) const
+0002f098 T android::ConfigDescription::IsCompatibleWith(android::ConfigDescription const&) const
+0002ebc4 T android::ConfigDescription::GetBcp47LanguageTag(bool) const
+0002eb86 T android::ConfigDescription::CopyWithoutSdkVersion() const
+0002edac T android::ConfigDescription::HasHigherPrecedenceThan(android::ConfigDescription const&) const
+0002ecd0 T android::ConfigDescription::Dominates(android::ConfigDescription const&) const
+0002ec44 T android::ConfigDescription::to_string() const
+         U android::DisplayEventReceiver::getFd() const
+         U android::DisplayEventReceiver::initCheck() const
+0002a118 T android::Theme::GetAttribute(unsigned int, android::Res_value*, unsigned int*) const
+0002a182 T android::Theme::ResolveAttributeReference(int, android::Res_value*, android::ResTable_config*, unsigned int*, unsigned int*) const
+0002ab24 T android::Theme::Dump() const
+         U android::Parcel::readString8() const
+         U android::Parcel::readFileDescriptor() const
+00026d78 W android::Vector<android::AssetManager::asset_path>::do_destroy(void*, unsigned int) const
+00026d28 W android::Vector<android::AssetManager::asset_path>::do_construct(void*, unsigned int) const
+00026e62 W android::Vector<android::AssetManager::asset_path>::do_move_forward(void*, void const*, unsigned int) const
+00026f06 W android::Vector<android::AssetManager::asset_path>::do_move_backward(void*, void const*, unsigned int) const
+00026da8 W android::Vector<android::AssetManager::asset_path>::do_copy(void*, void const*, unsigned int) const
+00026e02 W android::Vector<android::AssetManager::asset_path>::do_splat(void*, void const*, unsigned int) const
+00026720 W android::Vector<android::sp<android::AssetManager::SharedZip> >::do_destroy(void*, unsigned int) const
+0002670c W android::Vector<android::sp<android::AssetManager::SharedZip> >::do_construct(void*, unsigned int) const
+00026784 W android::Vector<android::sp<android::AssetManager::SharedZip> >::do_move_forward(void*, void const*, unsigned int) const
+000267d0 W android::Vector<android::sp<android::AssetManager::SharedZip> >::do_move_backward(void*, void const*, unsigned int) const
+0002673e W android::Vector<android::sp<android::AssetManager::SharedZip> >::do_copy(void*, void const*, unsigned int) const
+00026762 W android::Vector<android::sp<android::AssetManager::SharedZip> >::do_splat(void*, void const*, unsigned int) const
+00026c94 W android::Vector<android::String8>::do_destroy(void*, unsigned int) const
+00026c7c W android::Vector<android::String8>::do_construct(void*, unsigned int) const
+00026cde W android::Vector<android::String8>::do_move_forward(void*, void const*, unsigned int) const
+00026cee W android::Vector<android::String8>::do_move_backward(void*, void const*, unsigned int) const
+00026cac W android::Vector<android::String8>::do_copy(void*, void const*, unsigned int) const
+00026cc6 W android::Vector<android::String8>::do_splat(void*, void const*, unsigned int) const
+00040950 W android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >::do_destroy(void*, unsigned int) const
+0004093c W android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >::do_construct(void*, unsigned int) const
+000409f4 W android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >::do_move_forward(void*, void const*, unsigned int) const
+00040a64 W android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >::do_move_backward(void*, void const*, unsigned int) const
+00040992 W android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >::do_copy(void*, void const*, unsigned int) const
+000409c4 W android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >::do_splat(void*, void const*, unsigned int) const
+00040c36 W android::Vector<android::ResTable_type const*>::do_destroy(void*, unsigned int) const
+00040c34 W android::Vector<android::ResTable_type const*>::do_construct(void*, unsigned int) const
+00040c96 W android::Vector<android::ResTable_type const*>::do_move_forward(void*, void const*, unsigned int) const
+00040ca6 W android::Vector<android::ResTable_type const*>::do_move_backward(void*, void const*, unsigned int) const
+00040c38 W android::Vector<android::ResTable_type const*>::do_copy(void*, void const*, unsigned int) const
+00040c48 W android::Vector<android::ResTable_type const*>::do_splat(void*, void const*, unsigned int) const
+00040f1a W android::Vector<android::ResTable::PackageGroup*>::do_destroy(void*, unsigned int) const
+00040f18 W android::Vector<android::ResTable::PackageGroup*>::do_construct(void*, unsigned int) const
+00040f7a W android::Vector<android::ResTable::PackageGroup*>::do_move_forward(void*, void const*, unsigned int) const
+00040f8a W android::Vector<android::ResTable::PackageGroup*>::do_move_backward(void*, void const*, unsigned int) const
+00040f1c W android::Vector<android::ResTable::PackageGroup*>::do_copy(void*, void const*, unsigned int) const
+00040f2c W android::Vector<android::ResTable::PackageGroup*>::do_splat(void*, void const*, unsigned int) const
+0004086e W android::Vector<android::ResTable::Type*>::do_destroy(void*, unsigned int) const
+0004086c W android::Vector<android::ResTable::Type*>::do_construct(void*, unsigned int) const
+000408ce W android::Vector<android::ResTable::Type*>::do_move_forward(void*, void const*, unsigned int) const
+000408de W android::Vector<android::ResTable::Type*>::do_move_backward(void*, void const*, unsigned int) const
+00040870 W android::Vector<android::ResTable::Type*>::do_copy(void*, void const*, unsigned int) const
+00040880 W android::Vector<android::ResTable::Type*>::do_splat(void*, void const*, unsigned int) const
+00040e6e W android::Vector<android::ResTable::Header*>::do_destroy(void*, unsigned int) const
+00040e6c W android::Vector<android::ResTable::Header*>::do_construct(void*, unsigned int) const
+00040ece W android::Vector<android::ResTable::Header*>::do_move_forward(void*, void const*, unsigned int) const
+00040ede W android::Vector<android::ResTable::Header*>::do_move_backward(void*, void const*, unsigned int) const
+00040e70 W android::Vector<android::ResTable::Header*>::do_copy(void*, void const*, unsigned int) const
+00040e80 W android::Vector<android::ResTable::Header*>::do_splat(void*, void const*, unsigned int) const
+0004079e W android::Vector<android::ResTable::Package*>::do_destroy(void*, unsigned int) const
+0004079c W android::Vector<android::ResTable::Package*>::do_construct(void*, unsigned int) const
+000407fe W android::Vector<android::ResTable::Package*>::do_move_forward(void*, void const*, unsigned int) const
+0004080e W android::Vector<android::ResTable::Package*>::do_move_backward(void*, void const*, unsigned int) const
+000407a0 W android::Vector<android::ResTable::Package*>::do_copy(void*, void const*, unsigned int) const
+000407b0 W android::Vector<android::ResTable::Package*>::do_splat(void*, void const*, unsigned int) const
+         U android::RefBase::createWeak(void const*) const
+         U android::RefBase::decStrong(void const*) const
+         U android::RefBase::incStrong(void const*) const
+         U android::String8::getBasePath() const
+         U android::String8::getPathLeaf() const
+         U android::String8::getPathExtension() const
+         U android::String8::length() const
+0003ec1c T android::ResTable::getLocales(android::Vector<android::String8>*, bool, bool) const
+0003f21c T android::ResTable::createIdmap(android::ResTable const&, unsigned int, unsigned int, char const*, char const*, void**, unsigned int*) const
+0003c194 T android::ResTable::getResource(unsigned int, android::Res_value*, bool, unsigned short, unsigned int*, android::ResTable_config*) const
+0003fcf8 T android::ResTable::print_value(android::ResTable::Package const*, android::Res_value const&) const
+00039dec T android::ResTable::getBagLocked(unsigned int, android::ResTable::bag_entry const**, unsigned int*) const
+0003c900 T android::ResTable::getParameters(android::ResTable_config*) const
+0003e95c T android::ResTable::getTableCount() const
+0003d41c T android::ResTable::stringToValue(android::Res_value*, android::String16*, char16_t const*, unsigned int, bool, bool, unsigned int, android::String16 const*, android::String16 const*, android::ResTable::Accessor*, void*, unsigned int, bool) const
+0003c3c4 T android::ResTable::valueToString(android::Res_value const*, unsigned int, char16_t*, unsigned int*) const
+0003e960 T android::ResTable::getTableCookie(unsigned int) const
+0003bb64 T android::ResTable::getResourceName(unsigned int, bool, android::ResTable::resource_name*) const
+0003e932 T android::ResTable::getBasePackageId(unsigned int) const
+0003ee2c T android::ResTable::getResourceFlags(unsigned int, unsigned int*) const
+0003eef0 T android::ResTable::isPackageDynamic(unsigned char) const
+0003a5d4 T android::ResTable::resolveReference(android::Res_value*, int, unsigned int*, unsigned int*, android::ResTable_config*) const
+0003e9a8 T android::ResTable::getConfigurations(android::Vector<android::ResTable_config>*, bool, bool, bool) const
+0003c950 T android::ResTable::identifierForName(char16_t const*, unsigned int, char16_t const*, unsigned int, char16_t const*, unsigned int, unsigned int*) const
+0003ef6c T android::ResTable::isResourceDynamic(unsigned int) const
+0003e918 T android::ResTable::getBasePackageName(unsigned int) const
+0003e90c T android::ResTable::getBasePackageCount() const
+0003c3e2 T android::ResTable::getTableStringBlock(unsigned int) const
+0003e946 T android::ResTable::getLastTypeIdForPackage(unsigned int) const
+0003e96a T android::ResTable::getDynamicRefTableForCookie(int) const
+00039de8 T android::ResTable::lock() const
+0003a448 T android::ResTable::Theme::getAttribute(unsigned int, android::Res_value*, unsigned int*) const
+0003a66c T android::ResTable::Theme::getChangingConfigurations() const
+0003a504 T android::ResTable::Theme::resolveAttributeReference(android::Res_value*, int, unsigned int*, unsigned int*, android::ResTable_config*) const
+0003a674 T android::ResTable::Theme::dumpToLog() const
+0003ffb0 T android::ResTable::print(bool) const
+0003a274 T android::ResTable::unlock() const
+0003c3ec T android::ResTable::lockBag(unsigned int, android::ResTable::bag_entry const**) const
+0003bcd8 T android::ResTable::getEntry(android::ResTable::PackageGroup const*, int, int, android::ResTable_config const*, android::ResTable::Entry*) const
+0003ba50 T android::ResTable::getError() const
+0003cc3c T android::ResTable::findEntry(android::ResTable::PackageGroup const*, int, char16_t const*, unsigned int, unsigned int*) const
+0003c416 T android::ResTable::unlockBag(android::ResTable::bag_entry const*) const
+         U android::String16::size() const
+00022270 T android::ApkAssets::IsUpToDate() const
+00021f60 T android::ApkAssets::ForEachFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::function<void (android::BasicStringPiece<char> const&, android::FileType)> const&) const
+00021be4 T android::ApkAssets::Open(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, android::Asset::AccessMode) const
+000421fc T android::ZipFileRO::getEntryInfo(void*, unsigned short*, unsigned int*, unsigned int*, long long*, unsigned int*, unsigned int*) const
+0004238a T android::ZipFileRO::releaseEntry(void*) const
+00042198 T android::ZipFileRO::findEntryByName(char const*) const
+0004243c T android::ZipFileRO::uncompressEntry(void*, void*, unsigned int) const
+0004246c T android::ZipFileRO::uncompressEntry(void*, int) const
+000423a4 T android::ZipFileRO::getEntryFileName(void*, char*, unsigned int) const
+000423e4 T android::ZipFileRO::createEntryFileMap(void*) const
+00042078 W std::__1::__function::__func<int (*)(int), std::__1::allocator<int (*)(int)>, char (char)>::__clone(std::__1::__function::__base<char (char)>*) const
+00042058 W std::__1::__function::__func<int (*)(int), std::__1::allocator<int (*)(int)>, char (char)>::__clone() const
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::compare(unsigned int, unsigned int, char const*, unsigned int) const
+0002c118 W std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >::str() const
+         U std::__1::__shared_weak_count::__get_deleter(std::type_info const&) const
+         U std::__1::__vector_base_common<true>::__throw_length_error() const
+         U std::__1::__basic_string_common<true>::__throw_length_error() const
+         U std::__1::__basic_string_common<true>::__throw_out_of_range() const
+         U std::__1::locale::use_facet(std::__1::locale::id&) const
+         U std::__1::ios_base::getloc() const
+0004208e W std::__1::__function::__func<int (*)(int), std::__1::allocator<int (*)(int)>, char (char)>::destroy_deallocate()
+0004208c W std::__1::__function::__func<int (*)(int), std::__1::allocator<int (*)(int)>, char (char)>::destroy()
+00042092 W std::__1::__function::__func<int (*)(int), std::__1::allocator<int (*)(int)>, char (char)>::operator()(char&&)
+00032daa W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, void*>*>, bool> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::__emplace_unique_key_args<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&>(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&)
+00032c5c W std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, void*>*> std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::find<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+00032ff8 W std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::rehash(unsigned int)
+0003308e W std::__1::__hash_table<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::__unordered_map_hasher<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::hash<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::__unordered_map_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::equal_to<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, true>, std::__1::allocator<std::__1::__hash_value_type<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > > >::__rehash(unsigned int)
+0002f72c W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, void*>*>, bool> std::__1::__hash_table<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::__unordered_map_hasher<unsigned char, std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::hash<unsigned char>, true>, std::__1::__unordered_map_equal<unsigned char, std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::equal_to<unsigned char>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*> > >::__emplace_unique_key_args<unsigned char, std::__1::piecewise_construct_t const&, std::__1::tuple<unsigned char&&>, std::__1::tuple<> >(unsigned char const&, std::__1::piecewise_construct_t const&, std::__1::tuple<unsigned char&&>&&, std::__1::tuple<>&&)
+0002f8a0 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::__unordered_map_hasher<unsigned char, std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::hash<unsigned char>, true>, std::__1::__unordered_map_equal<unsigned char, std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::equal_to<unsigned char>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*> > >::rehash(unsigned int)
+0002f936 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::__unordered_map_hasher<unsigned char, std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::hash<unsigned char>, true>, std::__1::__unordered_map_equal<unsigned char, std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*>, std::__1::equal_to<unsigned char>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned char, android::IdmapEntry_header const*> > >::__rehash(unsigned int)
+0002c6b2 W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, void*>*>, bool> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> > > >::__emplace_unique_key_args<unsigned int, std::__1::piecewise_construct_t const&, std::__1::tuple<unsigned int const&>, std::__1::tuple<> >(unsigned int const&, std::__1::piecewise_construct_t const&, std::__1::tuple<unsigned int const&>&&, std::__1::tuple<>&&)
+0002c826 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> > > >::rehash(unsigned int)
+0002ccb2 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> > > >::remove(std::__1::__hash_const_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, void*>*>)
+0002c8bc W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, android::util::unique_cptr<android::ResolvedBag> > > >::__rehash(unsigned int)
+0002c248 W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, void*>*>, bool> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > > > >::__emplace_unique_key_args<unsigned int, std::__1::piecewise_construct_t const&, std::__1::tuple<unsigned int const&>, std::__1::tuple<> >(unsigned int const&, std::__1::piecewise_construct_t const&, std::__1::tuple<unsigned int const&>&&, std::__1::tuple<>&&)
+0002c3c0 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > > > >::rehash(unsigned int)
+0002c456 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > >, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, std::__1::vector<unsigned int, std::__1::allocator<unsigned int> > > > >::__rehash(unsigned int)
+00034554 W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, unsigned char>, void*>*>, bool> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, unsigned char> > >::__emplace_unique_key_args<unsigned int, std::__1::pair<unsigned int const, unsigned char> const&>(unsigned int const&, std::__1::pair<unsigned int const, unsigned char> const&)
+000346d0 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, unsigned char> > >::rehash(unsigned int)
+00034766 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned char>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, unsigned char> > >::__rehash(unsigned int)
+00034bda W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<std::__1::__hash_value_type<unsigned int, unsigned int>, void*>*>, bool> std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, unsigned int> > >::__emplace_unique_key_args<unsigned int, std::__1::pair<unsigned int const, unsigned int> const&>(unsigned int const&, std::__1::pair<unsigned int const, unsigned int> const&)
+00034d56 W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, unsigned int> > >::rehash(unsigned int)
+00034dec W std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, unsigned int>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, unsigned int> > >::__rehash(unsigned int)
+000326da W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<unsigned int, void*>*>, bool> std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> >::__emplace_unique_key_args<unsigned int, unsigned int const&>(unsigned int const&, unsigned int const&)
+00032554 W std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> >::rehash(unsigned int)
+000325ea W std::__1::__hash_table<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> >::__rehash(unsigned int)
+00034856 W std::__1::pair<std::__1::__hash_iterator<std::__1::__hash_node<unsigned long long, void*>*>, bool> std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__emplace_unique_key_args<unsigned long long, unsigned long long const&>(unsigned long long const&, unsigned long long const&)
+00034a24 W std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::rehash(unsigned int)
+00034aba W std::__1::__hash_table<unsigned long long, std::__1::hash<unsigned long long>, std::__1::equal_to<unsigned long long>, std::__1::allocator<unsigned long long> >::__rehash(unsigned int)
+         U std::__1::__next_prime(unsigned int)
+0002b2fc W std::__1::basic_string<char16_t, std::__1::char_traits<char16_t>, std::__1::allocator<char16_t> >::__grow_by(unsigned int, unsigned int, unsigned int, unsigned int, unsigned int, unsigned int)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*, unsigned int)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::assign(char const*, unsigned int)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::resize(unsigned int, char)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::operator=(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+         U std::__1::basic_istream<char, std::__1::char_traits<char> >::~basic_istream()
+         U std::__1::basic_istream<char, std::__1::char_traits<char> >::~basic_istream()
+         U std::__1::basic_ostream<char, std::__1::char_traits<char> >::sentry::sentry(std::__1::basic_ostream<char, std::__1::char_traits<char> >&)
+         U std::__1::basic_ostream<char, std::__1::char_traits<char> >::sentry::~sentry()
+         U std::__1::basic_ostream<char, std::__1::char_traits<char> >::~basic_ostream()
+         U std::__1::basic_ostream<char, std::__1::char_traits<char> >::~basic_ostream()
+         U std::__1::basic_ostream<char, std::__1::char_traits<char> >::operator<<(int)
+         U std::__1::basic_ostream<char, std::__1::char_traits<char> >::operator<<(unsigned int)
+         U std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::sync()
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::imbue(std::__1::locale const&)
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::uflow()
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::setbuf(char*, int)
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::xsgetn(char*, int)
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::xsputn(char const*, int)
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::showmanyc()
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::basic_streambuf()
+         U std::__1::basic_streambuf<char, std::__1::char_traits<char> >::~basic_streambuf()
+0002b08c W std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >::seekoff(long long, std::__1::ios_base::seekdir, unsigned int)
+0002b218 W std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >::overflow(int)
+0002b1be W std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >::pbackfail(int)
+0002b190 W std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >::underflow()
+         U std::__1::__shared_weak_count::__release_weak()
+         U std::__1::__shared_weak_count::~__shared_weak_count()
+00041018 W std::__1::__shared_ptr_emplace<android::Vector<android::ResTable_type const*>, std::__1::allocator<android::Vector<android::ResTable_type const*> > >::__on_zero_shared()
+00041020 W std::__1::__shared_ptr_emplace<android::Vector<android::ResTable_type const*>, std::__1::allocator<android::Vector<android::ResTable_type const*> > >::__on_zero_shared_weak()
+000222c0 W std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned int)
+00022612 W void std::__1::__tree_balance_after_insert<std::__1::__tree_node_base<void*>*>(std::__1::__tree_node_base<void*>*, std::__1::__tree_node_base<void*>*)
+         U std::__1::ctype<char>::id
+000328b6 W std::__1::pair<std::__1::__tree_iterator<android::ResTable_config, std::__1::__tree_node<android::ResTable_config, void*>*, int>, bool> std::__1::__tree<android::ResTable_config, std::__1::less<android::ResTable_config>, std::__1::allocator<android::ResTable_config> >::__emplace_unique_key_args<android::ResTable_config, android::ResTable_config const&>(android::ResTable_config const&, android::ResTable_config const&)
+000410b8 W std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::__map_value_compare<unsigned char, std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::less<unsigned char>, true>, std::__1::allocator<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > > > >::__find_equal<unsigned char>(std::__1::__tree_const_iterator<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::__tree_node<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, void*>*, int>, std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::__tree_node_base<void*>*&, unsigned char const&)
+00041024 W std::__1::__tree_iterator<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::__tree_node<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, void*>*, int> std::__1::__tree<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::__map_value_compare<unsigned char, std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::less<unsigned char>, true>, std::__1::allocator<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > > > >::__emplace_hint_unique_key_args<unsigned char, std::__1::pair<unsigned char const, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > > const&>(std::__1::__tree_const_iterator<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::__tree_node<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, void*>*, int>, unsigned char const&, std::__1::pair<unsigned char const, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > > const&)
+00040dce W std::__1::__tree<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::__map_value_compare<unsigned char, std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, std::__1::less<unsigned char>, true>, std::__1::allocator<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > > > >::destroy(std::__1::__tree_node<std::__1::__value_type<unsigned char, std::__1::set<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > > >, void*>*)
+00040dfc W std::__1::__tree<std::__1::__value_type<unsigned char, unsigned int>, std::__1::__map_value_compare<unsigned char, std::__1::__value_type<unsigned char, unsigned int>, std::__1::less<unsigned char>, true>, std::__1::allocator<std::__1::__value_type<unsigned char, unsigned int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<unsigned char, unsigned int>, void*>*)
+0002cd94 W std::__1::pair<std::__1::__tree_iterator<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, std::__1::__tree_node<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, void*>*, int>, bool> std::__1::__tree<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, std::__1::less<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > > > >::__emplace_unique_impl<std::__1::pair<unsigned int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > > >(std::__1::pair<unsigned int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >&&)
+0002b662 W std::__1::__tree<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, std::__1::__map_value_compare<int, std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, std::__1::less<int>, true>, std::__1::allocator<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > > > >::destroy(std::__1::__tree_node<std::__1::__value_type<int, std::__1::map<int, int, std::__1::less<int>, std::__1::allocator<std::__1::pair<int const, int> > > >, void*>*)
+0002b52c W std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::__value_type<int, int>, std::__1::__map_value_compare<int, std::__1::__value_type<int, int>, std::__1::less<int>, true>, std::__1::allocator<std::__1::__value_type<int, int> > >::__find_equal<int>(std::__1::__tree_const_iterator<std::__1::__value_type<int, int>, std::__1::__tree_node<std::__1::__value_type<int, int>, void*>*, int>, std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::__tree_node_base<void*>*&, int const&)
+0002b63e W std::__1::__tree<std::__1::__value_type<int, int>, std::__1::__map_value_compare<int, std::__1::__value_type<int, int>, std::__1::less<int>, true>, std::__1::allocator<std::__1::__value_type<int, int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<int, int>, void*>*)
+00040e20 W std::__1::__tree<std::__1::__value_type<unsigned int, unsigned int>, std::__1::__map_value_compare<unsigned int, std::__1::__value_type<unsigned int, unsigned int>, std::__1::less<unsigned int>, true>, std::__1::allocator<std::__1::__value_type<unsigned int, unsigned int> > >::destroy(std::__1::__tree_node<std::__1::__value_type<unsigned int, unsigned int>, void*>*)
+00022548 W std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::__find_equal<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+00022290 W std::__1::__tree<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::less<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::destroy(std::__1::__tree_node<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, void*>*)
+00041288 W std::__1::__tree_node_base<void*>*& std::__1::__tree<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > >::__find_equal<std::__1::pair<unsigned int, unsigned int> >(std::__1::__tree_const_iterator<std::__1::pair<unsigned int, unsigned int>, std::__1::__tree_node<std::__1::pair<unsigned int, unsigned int>, void*>*, int>, std::__1::__tree_end_node<std::__1::__tree_node_base<void*>*>*&, std::__1::__tree_node_base<void*>*&, std::__1::pair<unsigned int, unsigned int> const&)
+00040daa W std::__1::__tree<std::__1::pair<unsigned int, unsigned int>, std::__1::less<std::__1::pair<unsigned int, unsigned int> >, std::__1::allocator<std::__1::pair<unsigned int, unsigned int> > >::destroy(std::__1::__tree_node<std::__1::pair<unsigned int, unsigned int>, void*>*)
+         U std::__1::locale::~locale()
+00033238 W void std::__1::vector<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const, std::__1::allocator<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const> >::__push_back_slow_path<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const>(std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const&&)
+000333ac W std::__1::vector<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const, std::__1::allocator<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const> >::__swap_out_circular_buffer(std::__1::__split_buffer<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const, std::__1::allocator<std::__1::pair<android::OverlayableInfo, std::__1::unordered_set<unsigned int, std::__1::hash<unsigned int>, std::__1::equal_to<unsigned int>, std::__1::allocator<unsigned int> > > const>&>&)
+0002beac W void std::__1::vector<android::AssetManager2::Resolution::Step, std::__1::allocator<android::AssetManager2::Resolution::Step> >::__push_back_slow_path<android::AssetManager2::Resolution::Step>(android::AssetManager2::Resolution::Step&&)
+0002bfc0 W std::__1::enable_if<(__is_forward_iterator<android::AssetManager2::Resolution::Step*>::value) && (is_constructible<android::AssetManager2::Resolution::Step, std::__1::iterator_traits<android::AssetManager2::Resolution::Step*>::reference>::value), void>::type std::__1::vector<android::AssetManager2::Resolution::Step, std::__1::allocator<android::AssetManager2::Resolution::Step> >::assign<android::AssetManager2::Resolution::Step*>(android::AssetManager2::Resolution::Step*, android::AssetManager2::Resolution::Step*)
+0002b804 W void std::__1::vector<android::AssetManager2::PackageGroup, std::__1::allocator<android::AssetManager2::PackageGroup> >::__push_back_slow_path<android::AssetManager2::PackageGroup>(android::AssetManager2::PackageGroup&&)
+0002bbc4 W void std::__1::vector<android::AssetManager2::ConfiguredPackage, std::__1::allocator<android::AssetManager2::ConfiguredPackage> >::__push_back_slow_path<android::AssetManager2::ConfiguredPackage>(android::AssetManager2::ConfiguredPackage&&)
+0002cb44 W void std::__1::vector<android::ResTable_config, std::__1::allocator<android::ResTable_config> >::__push_back_slow_path<android::ResTable_config const&>(android::ResTable_config const&)
+00032b5c W void std::__1::vector<android::DynamicPackageEntry, std::__1::allocator<android::DynamicPackageEntry> >::__emplace_back_slow_path<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, unsigned int const&>(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&, unsigned int const&)
+00031c6a W std::__1::vector<android::DynamicPackageEntry, std::__1::allocator<android::DynamicPackageEntry> >::reserve(unsigned int)
+0003349c W void std::__1::vector<std::__1::unique_ptr<android::LoadedPackage const, std::__1::default_delete<android::LoadedPackage const> >, std::__1::allocator<std::__1::unique_ptr<android::LoadedPackage const, std::__1::default_delete<android::LoadedPackage const> > > >::__push_back_slow_path<std::__1::unique_ptr<android::LoadedPackage const, std::__1::default_delete<android::LoadedPackage const> > >(std::__1::unique_ptr<android::LoadedPackage const, std::__1::default_delete<android::LoadedPackage const> >&&)
+000321cc W std::__1::vector<std::__1::unique_ptr<android::LoadedPackage const, std::__1::default_delete<android::LoadedPackage const> >, std::__1::allocator<std::__1::unique_ptr<android::LoadedPackage const, std::__1::default_delete<android::LoadedPackage const> > > >::reserve(unsigned int)
+00041f68 W void std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::__emplace_back_slow_path<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&)
+0002cc18 W void std::__1::vector<android::ResTable_type const*, std::__1::allocator<android::ResTable_type const*> >::__push_back_slow_path<android::ResTable_type const* const&>(android::ResTable_type const* const&)
+0002b690 W std::__1::enable_if<(__is_forward_iterator<android::ApkAssets const**>::value) && (is_constructible<android::ApkAssets const*, std::__1::iterator_traits<android::ApkAssets const**>::reference>::value), void>::type std::__1::vector<android::ApkAssets const*, std::__1::allocator<android::ApkAssets const*> >::assign<android::ApkAssets const**>(android::ApkAssets const**, android::ApkAssets const**)
+0002bd36 W void std::__1::vector<int, std::__1::allocator<int> >::__push_back_slow_path<int>(int&&)
+0002c618 W void std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::__push_back_slow_path<unsigned int const&>(unsigned int const&)
+0002c546 W std::__1::enable_if<(__is_forward_iterator<unsigned int*>::value) && (is_constructible<unsigned int, std::__1::iterator_traits<unsigned int*>::reference>::value), void>::type std::__1::vector<unsigned int, std::__1::allocator<unsigned int> >::assign<unsigned int*>(unsigned int*, unsigned int*)
+         U std::__1::ios_base::init(void*)
+         U std::__1::ios_base::clear(unsigned int)
+         U std::__1::basic_ios<char, std::__1::char_traits<char> >::~basic_ios()
+         U std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > std::__1::operator+<char, std::__1::char_traits<char>, std::__1::allocator<char> >(char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+00049710 D construction vtable for android::LooperCallback-in-android::DisplayEventDispatcher
+00049298 V construction vtable for std::__1::basic_istream<char, std::__1::char_traits<char> >-in-std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+0004925c V construction vtable for std::__1::basic_iostream<char, std::__1::char_traits<char> >-in-std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+000492c0 V construction vtable for std::__1::basic_ostream<char, std::__1::char_traits<char> >-in-std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+00049700 D VTT for android::DisplayEventDispatcher
+00049234 V VTT for std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+00049600 V vtable for FileReader
+0004963c V vtable for BufferReader
+00049614 V vtable for BufferWriter
+00049628 V vtable for FdReader
+00049048 D vtable for android::_FileAsset
+000490b8 D vtable for android::AssetManager::SharedZip
+000490a8 D vtable for android::AssetManager
+00049124 V vtable for android::SortedVector<android::key_value_pair_t<android::String8, android::wp<android::AssetManager::SharedZip> > >
+00049650 V vtable for android::SortedVector<android::key_value_pair_t<android::String8, android::FileRec> >
+0004967c V vtable for android::SortedVector<android::key_value_pair_t<android::String8, android::FileState> >
+000491cc V vtable for android::SortedVector<android::key_value_pair_t<android::String16, unsigned char> >
+00049544 V vtable for android::SortedVector<android::key_value_pair_t<unsigned char, android::IdmapEntries> >
+0004934c V vtable for android::SortedVector<android::key_value_pair_t<unsigned int, android::ResolvedBag::Entry const*> >
+00049378 V vtable for android::SortedVector<android::key_value_pair_t<unsigned int, unsigned int> >
+00049150 V vtable for android::SortedVector<android::AssetDir::FileInfo>
+00049078 D vtable for android::_CompressedAsset
+000496a8 D vtable for android::DisplayEventDispatcher
+00049018 V vtable for android::Asset
+000491a4 V vtable for android::Vector<android::AssetManager::asset_path>
+000490d8 V vtable for android::Vector<android::sp<android::AssetManager::SharedZip> >
+0004917c V vtable for android::Vector<android::String8>
+000494f4 V vtable for android::Vector<std::__1::shared_ptr<android::Vector<android::ResTable_type const*> > >
+0004951c V vtable for android::Vector<android::ResTable_type const*>
+00049598 V vtable for android::Vector<android::ResTable::PackageGroup*>
+000494cc V vtable for android::Vector<android::ResTable::Type*>
+00049570 V vtable for android::Vector<android::ResTable::Header*>
+000494a4 V vtable for android::Vector<android::ResTable::Package*>
+000493bc D vtable for android::ObbFile
+00049114 V vtable for android::AssetDir
+000495dc V vtable for std::__1::__function::__func<int (*)(int), std::__1::allocator<int (*)(int)>, char (char)>
+000492e8 V vtable for std::__1::basic_stringbuf<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+000491f8 V vtable for std::__1::basic_stringstream<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+000495c0 V vtable for std::__1::__shared_ptr_emplace<android::Vector<android::ResTable_type const*>, std::__1::allocator<android::Vector<android::ResTable_type const*> > >
+         U non-virtual thunk to std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U non-virtual thunk to std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U virtual thunk to android::LooperCallback::~LooperCallback()
+         U virtual thunk to android::LooperCallback::~LooperCallback()
+         U virtual thunk to std::__1::basic_istream<char, std::__1::char_traits<char> >::~basic_istream()
+         U virtual thunk to std::__1::basic_istream<char, std::__1::char_traits<char> >::~basic_istream()
+         U virtual thunk to std::__1::basic_ostream<char, std::__1::char_traits<char> >::~basic_ostream()
+         U virtual thunk to std::__1::basic_ostream<char, std::__1::char_traits<char> >::~basic_ostream()
+         U virtual thunk to std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U virtual thunk to std::__1::basic_iostream<char, std::__1::char_traits<char> >::~basic_iostream()
+         U operator delete[](void*)
+         U operator delete(void*)
+         U operator new[](unsigned int)
+         U operator new(unsigned int)
+000450d8 T __aeabi_f2ulz
+00045130 T __aeabi_ldivmod
+000456cc T __aeabi_memclr
+000456cc T __aeabi_memclr4
+000456cc T __aeabi_memclr8
+000456b4 T __aeabi_memcpy
+000456b4 T __aeabi_memcpy4
+000456b4 T __aeabi_memcpy8
+000456b8 T __aeabi_memmove
+000456b8 T __aeabi_memmove4
+000456b8 T __aeabi_memmove8
+000456bc T __aeabi_memset
+000456bc T __aeabi_memset4
+000456bc T __aeabi_memset8
+000454e0 T __aeabi_uidiv
+000456d8 T __aeabi_uidivmod
+         U __android_log_assert
+         U __android_log_print
+         U __cxa_atexit
+         U __cxa_finalize
+         U __cxa_guard_acquire
+         U __cxa_guard_release
+         U __cxa_pure_virtual
+0004518c T __divdi3
+00045154 T __divmoddi4
+         U __errno
+         U __fgets_chk
+000450d8 T __fixunssfdi
+         U __fread_chk
+         U __memcpy_chk
+         U __open_2
+         U __read_chk
+         U __stack_chk_fail
+         U __stack_chk_guard
+         U __strcat_chk
+         U __strchr_chk
+         U __strlen_chk
+000451e8 T __udivmoddi4
+000456f4 T __udivmodsi4
+000454e0 T __udivsi3
+         U __vsnprintf_chk
+         U __write_chk
+         U abort
+         U access
+         w android_fdsan_close_with_tag
+         w android_fdsan_create_owner_tag
+         w android_fdsan_exchange_owner_tag
+         U ashmem_create_region
+         U ashmem_get_size_region
+         U ashmem_set_prot_region
+         U atoi
+         U atrace_begin_body
+         U atrace_enabled_tags
+         U atrace_end_body
+         U atrace_is_ready
+         U atrace_setup
+         U calloc
+         U ceilf
+         U close
+         U closedir
+         U crc32
+         U dup
+         U dup2
+         U execvp
+         U exit
+         U fclose
+         U fcntl
+         U fdopen
+         U feof
+         U ferror
+         U fileno
+         U flock
+         U fopen
+         U fork
+         U fprintf
+         U fread
+         U free
+         U fseek
+         U ftell
+         U ftruncate
+         U getc
+         U getenv
+         U getgid
+         U getuid
+         U inflate
+         U inflateEnd
+         U inflateInit2_
+         U isalpha
+         U isspace
+         U lseek
+         U lseek64
+         U lstat
+         U malloc
+         U memcmp
+         U memcpy
+         U memmove
+         U memset
+         U mmap
+         U munmap
+         U open
+         U opendir
+         U pipe
+         U printf
+         U pthread_mutex_destroy
+         U pthread_mutex_init
+         U pthread_mutex_lock
+         U pthread_mutex_unlock
+         U putchar
+         U puts
+         U read
+         U readdir
+         U realloc
+         U setgid
+         U setuid
+         U stat
+         U stderr
+         U strcasecmp
+         U strchr
+         U strcmp
+         U strdup
+         U strerror
+         U strlen
+         U strlen16
+         U strncmp
+         U strncpy
+         U strnlen
+         U strtof
+         U strzcmp16
+         U tolower
+         U toupper
+         U utf16_to_utf8
+         U utf16_to_utf8_length
+         U utf8_to_utf16
+         U utf8_to_utf16_length
+         U wait
+         U write
