@@ -7,7 +7,7 @@ pub struct IArchiveWriter {
 }
 
 impl Write for IArchiveWriter {
-    fn write(&mut self, buf: &[u8]) -> std::io::Result<usize> {
+    fn write(&mut self, _buf: &[u8]) -> std::io::Result<usize> {
         Ok(1)
     }
 
@@ -18,5 +18,5 @@ impl Write for IArchiveWriter {
 
 impl IArchiveWriter {
     pub fn write_file(&self) {}
-    pub fn start_entry(&self, output_path: String, flags: usize) {}
+    pub fn start_entry(&self, _output_path: String, _flags: usize) {}
 }

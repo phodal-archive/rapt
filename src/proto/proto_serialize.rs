@@ -29,7 +29,7 @@ pub fn serialize_file_reference_type_to_pb(typ: ResourceFileType) -> FileReferen
     }
 }
 
-pub fn serialize_config(config: ConfigDescription, out_pb_config: &mut Configuration) {
+pub fn serialize_config(_config: ConfigDescription, _out_pb_config: &mut Configuration) {
     // out_pb_config.set_mcc(config.mcc);
     // out_pb_config.set_mnc(config.mnc);
     // out_pb_config.set_locale(config.GetBcp47LanguageTag());

@@ -34,12 +34,12 @@ impl Png {
     }
 
     pub fn read(path: PathBuf) -> Png {
-        let mut img = image::open(path).unwrap();
+        let img = image::open(path).unwrap();
 
         let width = img.dimensions().0;
         let height = img.dimensions().1;
 
-        for (x, y, pixel) in img.pixels() {
+        for (_x, _y, pixel) in img.pixels() {
             println!("pixel: {:?}", pixel);
         }
         Png::new(width, height)

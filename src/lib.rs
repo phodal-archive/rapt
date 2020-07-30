@@ -13,6 +13,6 @@ mod tests {
 
     #[test]
     fn should_enable_read_file() {
-        let table = ResourceTable::new();
+        let _table = ResourceTable::new();
     }
 }

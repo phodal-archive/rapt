@@ -92,7 +92,7 @@ pub fn parse_resource_type(str: String) -> ResourceType {
 
 #[cfg(test)]
 mod tests {
-    use crate::resource::{parse_resource_type, ResourceType};
+    use crate::resource::{parse_resource_type};
 
     #[test]
     fn test_map_resource_type() {
