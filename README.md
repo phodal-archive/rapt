@@ -207,7 +207,7 @@ hdiutil resize -size <new-size-you-want>g ~/android.dmg.sparseimage
 mount 
 
 ```bash
-hdiutil attach ~/android.dmg -mountpoint /Volumes/android;
+hdiutil attach ~/android.dmg.sparseimage -mountpoint /Volumes/android;
 ```
 
 unmount
@@ -220,7 +220,7 @@ hdiutil detach /Volumes/android;
 bash 
 
 ```bash
-mountAndroid() { hdiutil attach ~/android.dmg -mountpoint /Volumes/android; }
+mountAndroid() { hdiutil attach ~/android.dmg.sparseimage -mountpoint /Volumes/android; }
 umountAndroid() { hdiutil detach /Volumes/android; }
 ```
 
