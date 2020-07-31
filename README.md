@@ -1,5 +1,8 @@
 # Rust with AAPT
 
+> AAPT2 (Android Asset Packaging Tool)
+
+
 ## Crunch Images
 
 Android Libs:
@@ -258,4 +261,21 @@ cargo install protobuf-codegen
 [如何在不影响原有aapt源码的情况下编译定制版aapt](https://blog.csdn.net/sbsujjbcy/article/details/51418336)
 
 [如何在Majove下编译aapt2](https://www.jianshu.com/p/03576605f436)
+
+### Related
+
+[Atlas AAPT](https://github.com/alibaba/atlas/tree/master/atlas-aapt)
+
+###  reversing engine
+
+ - [androguard](https://github.com/vivainio/androguard)
+ - [ClassyShark](https://github.com/google/android-classyshark)
+ - [Radare](https://www.radare.org/r/)
+
+[浅析 Android 打包流程](https://mp.weixin.qq.com/s?__biz=MzI0NjIzNDkwOA==&mid=2247483789&idx=1&sn=6aed8c7907d5bd9c8a5e7f2c2dcdac2e&scene=0#wechat_redirect)
+
+### Analyzer
+
+[Android Size Analyzer](https://github.com/android/size-analyzer)
+
 
