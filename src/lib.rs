@@ -6,6 +6,7 @@ pub mod crunch;
 pub mod format;
 pub mod proto;
 pub mod resource;
+pub mod xml;
 
 #[cfg(test)]
 mod tests {
