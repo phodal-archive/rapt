@@ -27,7 +27,22 @@ pub struct AaptAttribute {}
 pub struct Item {}
 
 #[derive(Clone, Debug)]
-pub struct Node {}
+pub struct Text {
+    node: Node,
+    text: String,
+}
+
+#[derive(Clone, Debug)]
+pub struct Node {
+    parent: Box<Element>,
+    line_number: i32,
+    column_number: i32,
+    comment: String,
+}
+
+impl Node {
+    pub fn new() {}
+}
 
 #[derive(Clone, Debug)]
 pub struct Attribute {
@@ -40,6 +55,7 @@ pub struct Attribute {
 
 #[derive(Clone, Debug)]
 pub struct Element {
+    node: Node,
     namespace_decls: Vec<NamespaceDecl>,
     namespace_uri: String,
     name: String,
