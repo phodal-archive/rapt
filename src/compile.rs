@@ -5,13 +5,16 @@ use crate::proto::ResourcesInternal::CompiledFile;
 use crate::resource::parse_resource_type;
 use crate::resource::resource_file::{ResourceFile, ResourceName};
 use crate::resource::resource_path_data::ResourcePathData;
+use crate::xml::xml_dom::XmlResource;
 use protobuf::CodedOutputStream;
 use std::io;
 
 pub struct Compile {}
 
 impl Compile {
-    pub fn compile_xml() {}
+    pub fn compile_xml() {
+        // XmlResource::new();
+    }
     pub fn compile_png() {}
     // values
     pub fn compile_table() {}

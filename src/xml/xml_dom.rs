@@ -64,10 +64,18 @@ pub struct Element {
 }
 
 #[derive(Clone, Debug)]
-pub struct XmlDom {
+pub struct XmlResource {
     file: ResourceFile,
     string_pool: StringPool,
     root: Box<Element>,
 }
 
-impl XmlDom {}
+impl XmlResource {
+    pub fn new(file: ResourceFile, element: Element) -> XmlResource {
+        XmlResource {
+            file,
+            string_pool: Default::default(),
+            root: Box::new(element),
+        }
+    }
+}
