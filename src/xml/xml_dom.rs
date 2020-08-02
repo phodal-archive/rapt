@@ -41,7 +41,14 @@ pub struct Node {
 }
 
 impl Node {
-    pub fn new() {}
+    pub fn new() -> Node {
+        Node {
+            parent: Box::new(Element::new()),
+            line_number: 0,
+            column_number: 0,
+            comment: "".to_string(),
+        }
+    }
 }
 
 #[derive(Clone, Debug)]
@@ -63,6 +70,19 @@ pub struct Element {
     child: Vec<Node>,
 }
 
+impl Element {
+    pub fn new() -> Element {
+        Element {
+            node: Node::new(),
+            namespace_decls: vec![],
+            namespace_uri: "".to_string(),
+            name: "".to_string(),
+            attributes: vec![],
+            child: vec![],
+        }
+    }
+}
+
 #[derive(Clone, Debug)]
 pub struct XmlResource {
     file: ResourceFile,
@@ -71,11 +91,11 @@ pub struct XmlResource {
 }
 
 impl XmlResource {
-    pub fn new(file: ResourceFile, element: Element) -> XmlResource {
+    pub fn new(file: ResourceFile) -> XmlResource {
         XmlResource {
             file,
             string_pool: Default::default(),
-            root: Box::new(element),
+            root: Box::new(Element::new()),
         }
     }
 }

@@ -13,7 +13,8 @@ pub struct Compile {}
 
 impl Compile {
     pub fn compile_xml() {
-        // XmlResource::new();
+        let mut res_file = ResourceFile::new();
+        XmlResource::new(res_file);
     }
     pub fn compile_png() {}
     // values
