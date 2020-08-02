@@ -85,7 +85,7 @@ impl Element {
 
 #[derive(Clone, Debug)]
 pub struct XmlResource {
-    file: ResourceFile,
+    pub(crate) file: ResourceFile,
     string_pool: StringPool,
     root: Box<Element>,
 }
@@ -98,4 +98,8 @@ impl XmlResource {
             root: Box::new(Element::new()),
         }
     }
+}
+
+pub fn inflate(file: ResourceFile) -> XmlResource {
+    XmlResource::new(file)
 }

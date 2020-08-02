@@ -3,9 +3,9 @@ use crate::format::container::ContainerWriter;
 use crate::proto::proto_serialize::serialize_compiled_file_to_pb;
 use crate::proto::ResourcesInternal::CompiledFile;
 use crate::resource::parse_resource_type;
-use crate::resource::resource_file::{ResourceFile, ResourceName};
+use crate::resource::resource_file::{ResourceFile, ResourceFileType, ResourceName};
 use crate::resource::resource_path_data::ResourcePathData;
-use crate::xml::xml_dom::XmlResource;
+use crate::xml::xml_dom::{inflate, XmlResource};
 use protobuf::CodedOutputStream;
 use std::io;
 
@@ -13,8 +13,15 @@ pub struct Compile {}
 
 impl Compile {
     pub fn compile_xml() {
-        let mut res_file = ResourceFile::new();
-        XmlResource::new(res_file);
+        let mut xml_file = ResourceFile::new();
+        let mut xml_resource = XmlResource::new(xml_file.clone());
+        xml_resource = inflate(xml_file);
+
+        let resource_type = parse_resource_type(path_data.resource_dir);
+        xml_file.name = ResourceName::new(resource_type);
+        xml_file.source = path_data.source;
+        xml_file.config = path_data.config;
+        xml_file.typ = ResourceFileType::kProtoXml;
     }
     pub fn compile_png() {}
     // values
