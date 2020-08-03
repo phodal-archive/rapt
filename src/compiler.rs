@@ -12,7 +12,7 @@ use std::io;
 pub struct Compile {}
 
 impl Compile {
-    pub fn compile_xml() {
+    pub fn compile_xml(path_data: ResourcePathData) {
         let mut xml_file = ResourceFile::new();
         let mut xml_resource = XmlResource::new(xml_file.clone());
         xml_resource = inflate(xml_file);

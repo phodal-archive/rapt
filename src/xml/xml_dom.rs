@@ -1,5 +1,6 @@
 use crate::proto::Resources::StringPool;
 use crate::resource::resource_file::ResourceFile;
+use crate::xml::visitor::Visitor;
 
 #[derive(Clone, Debug)]
 pub struct NamespaceDecl {
@@ -49,6 +50,12 @@ impl Node {
             comment: "".to_string(),
         }
     }
+
+    pub fn accept(&self, visitor: Box<dyn Visitor>) {
+        visitor.before_visit_element(Box::from(self.clone()));
+        visitor.visit(Box::new(self.clone()));
+        visitor.after_visit_element(Box::new(self.clone()));
+    }
 }
 
 #[derive(Clone, Debug)]
@@ -67,7 +74,7 @@ pub struct Element {
     namespace_uri: String,
     name: String,
     attributes: Vec<Attribute>,
-    child: Vec<Node>,
+    pub(crate) children: Vec<Node>,
 }
 
 impl Element {
@@ -78,7 +85,7 @@ impl Element {
             namespace_uri: "".to_string(),
             name: "".to_string(),
             attributes: vec![],
-            child: vec![],
+            children: vec![],
         }
     }
 }
