@@ -7,4 +7,7 @@ impl XmlIdCollector {
     pub fn consume(&self, context: Box<dyn IAaptContext>, mut xml_res: XmlResource) {
         xml_res.file.exported_symbols.clear();
     }
+    pub fn new() -> XmlIdCollector {
+        XmlIdCollector {}
+    }
 }
